@@ -1,0 +1,417 @@
+---
+title: "Résultats exposition 48h nanoplastiques sur *Daphnia magna* néonates CVE18"  # titre du document
+author:
+  - name: Antoine TOURRET  # remplacez par votre nom
+    email: antoinetourretpro@gmail.com  # remplacez par votre adresse email
+    corresponding: true  # permet à l'utilisateur de pouvoir vous envoyer un mail en cliquant sur l'icône à côté de votre nom
+affiliation: LEESU  # remplacez par votre affiliation
+date: "2025-06-13"
+date-format: "DD/MM/YYYY"
+knitr:
+  opts_chunk: 
+    collapse: true
+format:
+  html:
+    theme: 
+      light: light.scss  # couleurs en mode clair
+      dark: dark.scss  # couleurs en mode sombre
+    embed-resources: true
+    smooth-scroll: true  # permet de se balader dans le menu déroulant de manière fluide
+    theme-toggle: true
+    code-fold: true  # permet de replier et déplier les blocs de code
+    code-line-numbers: false  # pas de numérotation des lignes de code
+    code-annotations: hover
+    code-summary: "Show the code"  # texte à afficher pour dérouler le code
+    code-block-bg: true  # permet de styliser les blocs de code avec un fond spécifique
+    code-overflow: wrap  # gestion du débordement de code, il s'enroule s'il dépasse
+    toc: true  # permet de faire apparaître une table des matières (toc = table of contents)
+    toc-depth: 4  # le nombre de sous-sections visibles dans la toc
+    toc-location: left  # vous pouvez modifier la position de la toc à gauche "left" ou à droite "right"
+    page-layout: full  # définit les dimensions de l'HTML en pleine page
+    number-sections: false  # permet d'afficher ou non les numéros de section
+keywords: ["*Daphnia magna*", "nanoplastiques", "CVE18"] 
+abstract: | 
+
+---
+
+::: hidden
+```{=html}
+<style>
+body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
+```
+:::
+
+::: hidden
+Code des thèmes light et dark pour les figures
+
+```{r}
+theme_light <- function() {
+  theme_minimal(base_size = 11) %+%
+  theme(
+    panel.border = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    text = element_text(colour = "black"),
+    axis.text = element_text(colour = "black"),
+    rect = element_rect(colour = "white", fill = "black"),
+    plot.background = element_rect(fill = "white", colour = NA),
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(colour = "black")
+  )
+}
+
+theme_dark <- function() {
+  theme_minimal(base_size = 11) %+%
+  theme(
+    panel.border = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    text = element_text(colour = "white"),
+    axis.text = element_text(colour = "white"),
+    rect = element_rect(colour = "black", fill = "black"),
+    plot.background = element_rect(fill = "black", colour = NA),
+    axis.line = element_line(colour = "white"),
+    axis.ticks = element_line(colour = "white")
+  )
+}
+
+darksvglite <- function(file, width, height) {
+  on.exit(reset_theme_settings())
+  theme_set(theme_dark())
+  ggsave(
+    filename = file,
+    width = width,
+    height = height,
+    dev = "svg",
+    bg = "transparent"
+  )
+}
+```
+:::
+
+::: hidden
+Code pour le changement de thème des figures en fonction du thème de l'html
+
+```{js}
+function updateImageSrc() {
+  var bodyClass = document.body.classList;
+
+  // Toutes les images avec la classe "light-theme"
+  var lightImages = document.querySelectorAll('.light-theme');
+  // Toutes les images avec la classe "dark-theme"
+  var darkImages = document.querySelectorAll('.dark-theme');
+
+  if (bodyClass.contains('quarto-light')) {
+    // Afficher les images pour le thème clair
+    lightImages.forEach(function(image) {
+      image.style.display = 'block';
+    });
+    darkImages.forEach(function(image) {
+      image.style.display = 'none';
+    });
+  } else if (bodyClass.contains('quarto-dark')) {
+    // Afficher les images pour le thème sombre
+    lightImages.forEach(function(image) {
+      image.style.display = 'none';
+    });
+    darkImages.forEach(function(image) {
+      image.style.display = 'block';
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateImageSrc(); // Appliquer le bon thème à l'initialisation
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        updateImageSrc(); // Changer l'image lorsque le thème change
+      }
+    });
+  });
+
+  observer.observe(document.body, {
+    attributes: true // Observer les changements de classe sur le body
+  });
+});
+
+```
+:::
+
+::: hidden
+```{=html}
+<style>
+.light-theme, .dark-theme {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+}
+
+/* Masquer l'image non utilisée par défaut */
+.dark-theme {
+  display: none;
+}
+
+/* S'assurer que la légende est bien stylisée */
+figcaption {
+  text-align: justify;
+  color: inherit;
+  font-style: normal;
+}
+</style>
+```
+:::
+
+# Protocole utilisé
+
+Cliquez [ici](../../../../protocoles/2025/daphnia_magna_toxicity_48h/juin_2025/Protocole_exposition_48h_nanoplastiques_néonates_cv18.html)
+
+# Les paramètres physico-chimiques
+
+```{r, warning=FALSE, message=FALSE}
+
+library(knitr)
+library(kableExtra)
+
+# Données de la table
+table_data <- data.frame(
+  `Concentration` = c("0", "1000"),
+  `pH` = c("7,621","7,691"),
+  `O2` = c("6,28 78,8%","6,08 75,8%"),
+  `T°` = c("26,7","26,5"))
+
+colnames(table_data) <- c("Concentration (ppm)", "pH", "O2", "Température (°C)")
+
+# Génération de la table avec kable
+kable(table_data, align = 'c', caption = "Les paramètres physico-chimiques après 48h d'exposition") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = T,
+    position = "center")
+```
+
+:::{ .callout-important}
+En début d'exposition :
+
+-   pH = 7,393
+-   O<sub>2</sub> :  6,41 mg L<sup>-1</sup> 75%
+-   Température : 23,1°C
+
+La température en fin d'exposition est bien plus important qu'en début d'exposition. Il y a eu de gros soucis de climatisation et la température dans les laboratoires a atteint les 30°C. Cependant, les plaques 96 puits sont restées dans la Zebrabox à température contrôlée (20°C).
+:::
+
+# La mortalité
+
+```{r, warning=FALSE, message=FALSE, label = "tbl-mortality"}
+
+library(knitr)
+library(kableExtra)
+
+# Création du tableau combiné
+table_data <- data.frame(
+  `Concentration CVE18 (ppm)`         = c("0", "1", "5", "10", "50", "100", "500", "1 000"),
+  `Nombre de daphnie morte 24 h` = c(  0,   0,   7,   10,   24,    24,    24,     24),
+  `Nombre de daphnie morte 48 h` = c(  5,   2,  19,   24,   24,    24,    24,     24)
+)
+
+colnames(table_data) <- c("Concentration CVE18 (ppm)", "Mortalité 24h", "Mortalité 48h")
+
+
+# Affichage avec kable et kableExtra
+kable(table_data,
+      align   = 'c',
+      caption = "Mortalité des daphnies (CVE18) après 24 h et 48 h d'exposition") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width        = TRUE,
+    position          = "center"
+  )
+
+
+```
+
+# Courbe concentration-réponse
+
+```{r, warning=FALSE, message=FALSE}
+
+# Themes
+light_theme <- function(base_size = 11, base_family = "") {
+  theme_bw(base_size = base_size, base_family = base_family) %+replace% theme(
+    plot.title       = element_text(color = "black", size = 14, hjust = 0.5),
+    axis.text.y      = element_text(color = "black", size = 12),
+    axis.text.x      = element_text(color = "black", size = 12),
+    axis.title.x     = element_text(color = "black", size = 12, margin = margin(t = 5, r = 15)),
+    axis.title.y     = element_text(color = "black", size = 12, angle = 90, margin = margin(r = 10)),
+    legend.position  = "right",
+    legend.text      = element_text(color = "black", size = 12, face = "italic"),
+    legend.title     = element_blank(),
+    strip.text.x     = element_text(size = 12),
+    strip.background = element_rect(fill = "white"),
+    plot.caption     = element_text(color = "black", size = 8, hjust = 1, margin = margin(t = 10))
+  )
+}
+
+dark_theme <- function(base_size = 11, base_family = "") {
+  theme_bw(base_size = base_size, base_family = base_family) %+replace% theme(
+    plot.title       = element_text(color = "white", size = 14, hjust = 0.5),
+    axis.text.y      = element_text(color = "white", size = 12),
+    axis.text.x      = element_text(color = "white", size = 12),
+    axis.title.x     = element_text(color = "white", size = 12, margin = margin(t = 5, r = 15)),
+    axis.title.y     = element_text(color = "white", size = 12, angle = 90, margin = margin(r = 10)),
+    legend.position  = "right",
+    legend.text      = element_text(color = "white", size = 12, face = "italic"),
+    legend.title     = element_blank(),
+    legend.background= element_rect(fill = "black"),
+    legend.key       = element_rect(fill = "black"),
+    strip.text.x     = element_text(color = "white", size = 12),
+    strip.background = element_rect(fill = "black", color = "white"),
+    plot.background  = element_rect(fill = "black"),
+    panel.background = element_rect(fill = "black"),
+    panel.border     = element_rect(color = "white", fill = NA),
+    panel.grid.major = element_line(color = "grey30"),
+    panel.grid.minor = element_line(color = "grey30"),
+    plot.caption     = element_text(color = "white", size = 8, hjust = 1, margin = margin(t = 10))
+  )
+}
+
+# Packages
+library(drc)
+library(ggplot2)
+library(scales)
+
+# Data definitions for 24h and 48h
+table24 <- data.frame(
+  Conc     = c(0,   1,   5,  10,  50,  100, 500, 1000),
+  Dead     = c(0,   0,   7,  10, 24,   24,  24,   24),
+  Time     = "24h"
+)
+table48 <- data.frame(
+  Conc     = c(0,   1,   5,  10,  50, 100, 500, 1000),
+  Dead     = c(5,   2,  19,  24,  24,  24,  24,   24),
+  Time     = "48h"
+)
+# Calculate % mortality (denominator = 24 individuals)
+all_data <- rbind(table24, table48)
+all_data$PctMort <- all_data$Dead / 24 * 100
+
+# Offset for plotting zero on log-scale
+offset <- min(all_data$Conc[all_data$Conc > 0]) / 10
+all_data$ConcPlot <- ifelse(all_data$Conc == 0, offset, all_data$Conc)
+
+# Fit 4PL model separately for each timepoint
+fit_list <- lapply(split(all_data, all_data$Time), function(df) {
+  drm(PctMort ~ Conc, data = df, fct = LL.3())
+})
+names(fit_list) <- c("24h", "48h")
+
+# Generate prediction data for each fit
+pred_list <- lapply(names(fit_list), function(t) {
+  fit <- fit_list[[t]]
+  new_conc <- exp(seq(log(offset), log(max(all_data$Conc)), length = 200))
+  newdata <- data.frame(Conc = new_conc)
+  pr <- predict(fit, newdata, interval = "confidence", level = 0.95)
+  newdata$fit <- pr[,1]
+  newdata$lwr <- pr[,2]
+  newdata$upr <- pr[,3]
+  newdata$Time <- t
+  newdata
+})
+newpred <- do.call(rbind, pred_list)
+
+# Compute EC50 for each timepoint
+ec50_list <- lapply(fit_list, function(f) as.data.frame(ED(f, 50, interval = "delta")))
+# Combine for subtitle or table
+ec50_df <- do.call(rbind, ec50_list)
+ectitle <- sprintf("EC50 24h = %.1f ppm (%.1f–%.1f); 48h = %.1f ppm (%.1f–%.1f)",
+                   ec50_df["24h","Estimate"], ec50_df["24h","Lower"], ec50_df["24h","Upper"],
+                   ec50_df["48h","Estimate"], ec50_df["48h","Lower"], ec50_df["48h","Upper"])
+
+# Plot
+curve_both_light <- ggplot() +
+  geom_point(data = all_data,
+             aes(x = ConcPlot, y = PctMort, shape = Time), size = 3) +
+  geom_line(data = newpred,
+            aes(x = Conc, y = fit, color = Time), size = 1) +
+  geom_ribbon(data = newpred,
+              aes(x = Conc, ymin = lwr, ymax = upr, fill = Time),
+              alpha = 0.2) +
+  scale_x_log10(
+    breaks = c(offset, 1, 5, 10, 50, 100, 500, 1000),
+    labels = c("0", "1", "5", "10", "50", "100", "500", "1000")
+  ) +
+  scale_y_continuous(breaks = seq(0, 100, 20)) +
+  labs(
+    x        = "Concentration (ppm)",
+    y        = "Mortalité (%)",
+    subtitle = ectitle
+  ) +
+  light_theme()
+
+curve_both_dark <- ggplot() +
+  geom_point(data = all_data,
+             aes(x = ConcPlot, y = PctMort, shape = Time), size = 3, color = "white") +
+  geom_line(data = newpred,
+            aes(x = Conc, y = fit, color = Time), size = 1) +
+  geom_ribbon(data = newpred,
+              aes(x = Conc, ymin = lwr, ymax = upr, fill = Time),
+              alpha = 0.2) +
+  scale_x_log10(
+    breaks = c(offset, 1, 5, 10, 50, 100, 500, 1000),
+    labels = c("0", "1", "5", "10", "50", "100", "500", "1000")
+  ) +
+  scale_y_continuous(breaks = seq(0, 100, 20)) +
+  labs(
+    x        = "Concentration (ppm)",
+    y        = "Mortalité (%)",
+    subtitle = ectitle
+  ) +
+  dark_theme()
+
+ggsave(
+  filename = "outputs/ec50_24h_48h_light_theme.png",
+  plot     = curve_both_light,
+  width    = 9,      # largeur en pouces
+  height   = 7,      # hauteur en pouces
+  dpi      = 300     # résolution
+)
+
+ggsave(
+  filename = "outputs/ec50_24h_48h_dark_theme.png",
+  plot     = curve_both_dark,
+  width    = 9,      # largeur en pouces
+  height   = 7,      # hauteur en pouces
+  dpi      = 300     # résolution
+)
+```
+
+::: {#fig-ce50-cv18}
+<div style>
+<img class="light-theme" src="outputs/ec50_24h_48h_light_theme.png"
+style="max-width: 100%; height: 500px; width: 750px; border: none;"
+alt="Light">
+<img class="dark-theme" src="outputs/ec50_24h_48h_dark_theme.png"
+style="max-width: 100%; height: 500px; width: 750px; border: none;"
+alt="Dark">
+</div>
+Détermination des CE<sub>50 24h</sub> et CE<sub>50 48h</sub> chez *Daphnia magna* exposée à une gamme de CVE18. Le modèle utilisé pour les deux CE<sub>50</sub> est le LL.3(). Ce modèle a été retenu en se basant sur le critère AIC (plus la valeur est faible, meilleur est l'ajustement du modèle). Pour la CE<sub>50 48h</sub> le meilleur modèle n'était pas le LL.3() mais graphiquement, c'est celui qui rend le mieux.
+:::
+
+Le meilleur ajustement du modèle est celui à 24h d'exposition (@fig-ce50-cv18). Pour le modèle utilisé à 48h d'exposition, le critère AIC n'était vraiment pas bon. Comme l'indique le @tbl-mortality, la condition contrôle montre une mortalité importante. Les néonates ne sont pas nourris pendant 48h et sont placés dans des volumes de 300 µL. Il est possible qu'au bout de 48h, la mortalité augmente de manière excessive. 
+
+# Conclusion & Perspectives
+
+L'exposition a bien fonctionné et est validée car les paramètres physico-chimiques en fin de manip sont bons. Le pH et l'O<sub>2</sub> sont similaires dans 0 et 1000 ppm et aucune variation n'a été constatée entre le début et la fin de l'exposition. Pour ce qui est des résultats, le CVE18 montre une toxicité importante dès les premières 24h et ce sur les "petites" concentrations de la gamme.
+
+La CE<sub>50 24h</sub> est bonne et a du crédit car le modèle utilisé est bon (*based on AIC*). Pour la CE<sub>50 48h</sub>, le modèle n'étant pas aussi bon, la valeur est donc à prendre avec des pincettes. Ces valeurs seront affinées avec une gamme d'exposition plus fine comprise entre 1 et 50 ppm.
+

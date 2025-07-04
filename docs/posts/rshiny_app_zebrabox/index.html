@@ -73,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -169,8 +170,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div class="hidden">
+<style>
+body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
+</div>
+<p><strong>From raw data to live, interactive visualization.</strong></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>The ZebraBox chamber is a complete system for high-throughput behavioral tests. Applications include pharmacology, toxicology, ecotoxicology, and behavioral genetics. The device holds 6-, 12-, 24-, 48- or 96-well plates and has a high-resolution camera which films in visible or infrared light. Tests run from minutes to days and each data point links to a fixed time window (integration period). Output files are <code>.raw</code> and <code>.xls</code>.</p>
+</section>
+<section id="why-this-app" class="level1">
+<h1>Why This App?</h1>
+<p>Data in many files and formats leads to errors, duplicates, and manual fixes. This app centralizes everything in one place. You get accurate, up-to-date, and auditable results without code. <br></p>
+<div class="centered-text">
+<p><strong>Simple : drag, drop, clean, merge, and analyze in a few clicks.</strong></p>
+</div>
+</section>
+<section id="how-to-use-the-app" class="level1">
+<h1>How to Use the App ?</h1>
+<section id="get-the-app" class="level2">
+<h2 class="anchored" data-anchor-id="get-the-app">Get the app</h2>
+</section>
+<section id="load-or-create-a-plate-plan" class="level2">
+<h2 class="anchored" data-anchor-id="load-or-create-a-plate-plan">Load or Create a Plate Plan</h2>
+<p>ZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as <code>.xlsx</code> or view it as a table and figure. If you already have a plan, load it and wait to see <em>Upload complete</em> to click on the button. Column names must follow the required format. <em>What is a required format ?</em> Click <a href="inputs/sample_plate_plan_plate_1.xlsx">here</a> to download a 96-well sample plate plan.</p>
+</section>
+<section id="load-raw-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-raw-data">Load Raw Data</h2>
+<p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button. The number of raw files must match your plate plans.</p>
+</section>
+<section id="choose-primary-mode" class="level2">
+<h2 class="anchored" data-anchor-id="choose-primary-mode">Choose Primary Mode</h2>
+<ul>
+<li><p><strong>Tracking mode</strong><br>
+Follows each subject’s path.<br>
+Yields distance moved, active time, and movement counts.<br>
+See details in the <a href="inputs/zebrabox_guidelines.pdf">ZebraBox guide</a>.</p></li>
+<li><p><strong>Quantization mode</strong><br>
+Counts pixel color changes.<br>
+Yields high, medium, or low activity levels.<br>
+See details in the <a href="inputs/zebrabox_guidelines.pdf">ZebraBox guide</a>.</p></li>
+</ul>
+</section>
+<section id="choose-secondary-mode" class="level2">
+<h2 class="anchored" data-anchor-id="choose-secondary-mode">Choose Secondary Mode</h2>
+<ul>
+<li><p><strong>Light/Dark (LDM)</strong><br>
+For experiments with light shifts (0–100% or 100–0%).<br>
+Works even if no change occurred.</p></li>
+<li><p><strong>Vibration/Rest (VM)</strong><br>
+For experiments with vibration frequencies (Hz).</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

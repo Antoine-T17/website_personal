@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "posts/rshiny_app_zebrabox/index.html",
+    "href": "posts/rshiny_app_zebrabox/index.html",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "",
+    "text": "From raw data to live, interactive visualization."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#get-the-app",
+    "href": "posts/rshiny_app_zebrabox/index.html#get-the-app",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Get the app",
+    "text": "Get the app"
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#load-or-create-a-plate-plan",
+    "href": "posts/rshiny_app_zebrabox/index.html#load-or-create-a-plate-plan",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Load or Create a Plate Plan",
+    "text": "Load or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is a required format ? Click here to download a 96-well sample plate plan."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#load-raw-data",
+    "href": "posts/rshiny_app_zebrabox/index.html#load-raw-data",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Load Raw Data",
+    "text": "Load Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button. The number of raw files must match your plate plans."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#choose-primary-mode",
+    "href": "posts/rshiny_app_zebrabox/index.html#choose-primary-mode",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Choose Primary Mode",
+    "text": "Choose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#choose-secondary-mode",
+    "href": "posts/rshiny_app_zebrabox/index.html#choose-secondary-mode",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Choose Secondary Mode",
+    "text": "Choose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Antoine Tourret",
