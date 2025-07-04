@@ -1,0 +1,10 @@
+---
+title: "Antoine Tourret"
+image: inputs/photos/profile_pic/coming_soon.png
+about:
+  template: jolla
+---
+
+Hi ! I'm a PhD student in aquatic ecotoxicology. <br>
+I'm currently investigating the toxicity of micro and nanoplastic on aquatic organisms. <br>
+Additionally, I manage data processing, visualization, and produce visually engaging reports using Quarto. <br>

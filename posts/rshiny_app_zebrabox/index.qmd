@@ -1,0 +1,7 @@
+---
+title: "RShiny application for zebrabox data treatment"
+author: "Antoine Tourret"
+date: last-modified
+categories: [R, Rshiny, app]
+image: "inputs/viewpoint_logo_remove_background.png"
+---

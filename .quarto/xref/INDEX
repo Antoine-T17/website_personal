@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "571e0bec"
+  },
+  "about.qmd": {
+    "about.html": "16bfd4a1"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "d0f0fdf9"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "e5347422"
+  },
+  "cv.qmd": {
+    "cv.html": "2783bd3c"
+  },
+  "portfolio.qmd": {
+    "portfolio.html": "8726e64c"
+  },
+  "index_old.qmd": {
+    "index_old.html": "b0feb186"
+  },
+  "posts/rshiny_app_zebrabox/index.qmd": {
+    "index.html": "17bb5992"
+  }
+}
