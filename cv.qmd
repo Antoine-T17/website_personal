@@ -1,1 +1,112 @@
-![](inputs/CV_Antoine_TOURRET_2025.pdf){width="100%" height="1000px"}
+---
+title: "Antoine Tourret - Curriculum Vitae"
+format:
+  html:
+    theme: cosmo
+    toc: false
+    self-contained: true
+    css: styles.css
+    page-layout: full
+---
+
+::: hidden
+```{=html}
+<style>
+body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
+```
+:::
+
+## Contact Information
+- **Date of Birth**: December 17, 2000  
+- **Email**: antoinetourretpro@gmail.com  
+- **LinkedIn**: [linkedin.com/in/antoine-tourret-b70672175](https://linkedin.com/in/antoine-tourret-b70672175)
+
+## Professional Summary
+PhD candidate in ecotoxicology with expertise in assessing the impacts of emerging pollutants (*e.g.*, nanoplastics, optical brighteners, glyphosate) on aquatic organisms. Skilled in experimental design, algal and microbial cultures, and data analysis using R. Passionate about data visualization.
+
+## Education
+- **Master's in Ecotoxicology and Environmental Chemistry, International Track MOBBIDIQ**  
+  University of Bordeaux – INRS Québec  
+  2021 – 2023 (GPA: 15.5/20)  
+  Main subjects: Aquatic ecotoxicology, analytical chemistry, biostatistics, regulations.
+
+- **Bachelor's (L3) in Life Sciences - Organisms and Ecosystems**  
+  University of Bordeaux  
+  2020 – 2021 (GPA: 14.8/20)  
+  Main subjects: Cellular toxicology, ecosystem dynamics and biodiversity, biostatistics.
+
+- **DUT in Biological Engineering, Environmental Engineering Option**  
+  IUT Grand Ouest Normandie, Caen  
+  2018 – 2020 (GPA: 14.4/20)  
+  Main subjects: Biochemistry, general and organic chemistry, microbial ecology, ecotoxicology.
+
+## Professional Experience
+- **PhD Thesis**  
+  Laboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France  
+  Supervision: L. GARRIGUE-ANTAR and T. SRIKANTHASAMY  
+  October 2024 – Present  
+  - Ecotoxicological impacts of micro- and nanoplastics on freshwater organisms and evaluation of the toxicity of nanoplastics treatments by advanced oxidation processes.
+
+- **Research Engineer**  
+  Laboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France  
+  Supervision: L. GARRIGUE-ANTAR  
+  February 2024 – September 2024  
+  - Monitoring the ecotoxic potential of nanoplastics and their degradation products during and after advanced oxidation processes in microcrustacean and unicellular algae models (ANR-22-CE04-0011-02).
+
+- **M2 Internship**  
+  Institut National de la Recherche pour l'Agriculture et l'Environnement, Cestas, France  
+  Supervision: C. BONNINEAU  
+  January 2023 – June 2023  
+  - Study of the ecotoxicological potential of glyphosate, AMPA, and optical brighteners on a pond phytoplankton biofilm and on monospecific algal cultures.
+
+- **Master's Internship (Bi-Diploma Program)**  
+  Institut National de la Recherche Scientifique, Centre Eau-Terre-Environnement, Montréal & Québec, Canada  
+  Supervision: I. LAVOIE and P. JUNEAU  
+  January 2022 – June 2023  
+  - Study of the ecotoxicological potential of optical brighteners on a river periphytic biofilm and on monospecific algal cultures in axenic conditions.
+
+- **L3 Internship**  
+  Laboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France  
+  Supervision: L. GARRIGUE-ANTAR & F. SANDRE  
+  May 2021 – June 2021  
+  - Study of the ecotoxicological potential of paraben substitutes in a zebrafish larva model within the COSMET’EAU project.
+
+- **DUT Internship**  
+  Laboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France  
+  Supervision: L. GARRIGUE-ANTAR & F. SANDRE
+  June 2020  
+  - Data processing using RStudio for ecotoxicological tests of a mixture of pharmaceutical pollutants on a zebrafish larva model within the OPUR5 program.
+
+## Publications & Communications
+
+### Articles to be Published
+- Ecotoxicological effects of optical brighteners agents on the growth and photosynthesis of *Chlorella vulgaris* and *Microcystis aeruginosa*. 2024. A. Tourret, M. Laviale, I. Lavoie, C. Bonnineau & P. Juneau.
+
+- Assessment of the toxic effects of an optical brightener agent alone and in mixture with glyphosate and its main metabolite (aminomethylphosphonic acid) on freshwater benthic microbial communities. 2025. A. Tourret, M. Laviale, P. Juneau, I. Lavoie, S. Morin, D. Milan-Navarro, A. Moreira, N. Mazzella & C. Bonnineau. Targeted journal: *FEMS Microbiology Ecology*.
+
+### Communications
+- **Poster**: Characterization of the ecotoxicological potential of polystyrene nanoplastics that have or have not undergone advanced oxidation processes on *Chlamydomonas reinhardtii* and *Daphnia magna*. A. Tourret, L. Garrigue-Antar. Annual Congress of the Francophone Society for Environmental Health, November 2024.
+
+- **Video**: Flash edition 20h: Optical brighteners in French waterways, impacts on aquatic organisms. A. Tourret. Joint Ecotoxicology Colloquium Chapter Saint-Laurent-EcotoQ, June 2022, Québec, Canada.  
+  *First prize in the international scientific popularization contest, video category.*
+
+- **Flash Talk**: Monitoring the response of biofilms and snails to optical brighteners. A. Tourret. 31st Annual Symposium of the Interuniversity Research Group in Limnology, March 2022, Montréal, Canada.  
+  *Second prize for the best short presentation, M.Sc. category.*
+
+## Teaching Experience
+- **Chemical Risks (Bachelor Year 1)**: Lectures and practical work (6 hours and 9 hours).  
+- **Statistical Tools (Bachelor Year 2)**: Tutorials and practicals (13.5 hours and 8 hours).  
+- **Statistical Tools (Bachelor Year 3)**: Tutorials and practicals (4.5 hours).
+
+## Skills and Interests
+- **Scientific Skills**: Sample preparation in synchronous fluorescence spectroscopy / LC-MS, training in HPLC-UV, mastery of monospecific algal cultures (*Chlorella vulgaris*, *Microcystis aeruginosa*, *Chlamydomonas reinhardtii*, *Raphidocelis subcapitata*) in axenic or non-axenic conditions and periphytic microbial cultures, development of Daphnia cultures (*Daphnia magna*), design of experimental setups for OECD acute toxicity tests or non-regulated chronic toxicity tests.
+
+- **IT Skills**: RStudio, RShiny app, Quarto, Microsoft Office Suite (Excel, PowerPoint, Word).
+
+- **Languages**: French (native), English (C1).
+
+- **Personal Interests**: Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis (Xu Xin the GOAT), music (guitar, a bit of piano).
