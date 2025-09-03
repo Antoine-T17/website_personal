@@ -4,7 +4,7 @@
     "href": "posts/rshiny_app_zebrabox/index.html",
     "title": "RShiny application for zebrabox data treatment",
     "section": "",
-    "text": "From raw data to live, interactive visualization."
+    "text": "From raw data to interactive visualization."
   },
   {
     "objectID": "posts/rshiny_app_zebrabox/index.html#get-the-app",
@@ -25,7 +25,7 @@
     "href": "posts/rshiny_app_zebrabox/index.html#load-raw-data",
     "title": "RShiny application for zebrabox data treatment",
     "section": "Load Raw Data",
-    "text": "Load Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button. The number of raw files must match your plate plans."
+    "text": "Load Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans."
   },
   {
     "objectID": "posts/rshiny_app_zebrabox/index.html#choose-primary-mode",

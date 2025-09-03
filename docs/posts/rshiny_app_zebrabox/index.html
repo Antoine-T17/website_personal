@@ -178,7 +178,7 @@ body {
 }
 </style>
 </div>
-<p><strong>From raw data to live, interactive visualization.</strong></p>
+<p><strong>From raw data to interactive visualization.</strong></p>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>The ZebraBox chamber is a complete system for high-throughput behavioral tests. Applications include pharmacology, toxicology, ecotoxicology, and behavioral genetics. The device holds 6-, 12-, 24-, 48- or 96-well plates and has a high-resolution camera which films in visible or infrared light. Tests run from minutes to days and each data point links to a fixed time window (integration period). Output files are <code>.raw</code> and <code>.xls</code>.</p>
@@ -202,7 +202,10 @@ body {
 </section>
 <section id="load-raw-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-raw-data">Load Raw Data</h2>
-<p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button. <u>The number of raw files must match your plate plans</u>.</p>
+<p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button.</p>
+<div class="warnings">
+<p>The number of raw files must match your plate plans.</p>
+</div>
 </section>
 <section id="choose-primary-mode" class="level2">
 <h2 class="anchored" data-anchor-id="choose-primary-mode">Choose Primary Mode</h2>
@@ -236,16 +239,16 @@ For experiments with vibration frequencies (Hz).</p></li>
 </section>
 <section id="additional-parameters" class="level2">
 <h2 class="anchored" data-anchor-id="additional-parameters">Additional Parameters</h2>
-<p>Before running full processing, upload your <strong>period transition file</strong> and <strong>removal specification file</strong>. Both must be <code>.xlsx</code> files with column names in the required format. <strong>What is the required format?</strong> Download a <a href="inputs/sample_period_transition.xlsx">sample period transition file</a> and a <a href="inputs/sample_removal_specification.xlsx">sample removal specification file</a>.</p>
+<p>Before running full processing, upload your period transition file and removal specification file. Both must be <code>.xlsx</code> files with column names in the required format. <em>What is the required format?</em> Download a <a href="inputs/sample_period_transition.xlsx">sample period transition file</a> and a <a href="inputs/sample_removal_specification.xlsx">sample removal specification file</a>.</p>
 </section>
 <section id="run-full-processing" class="level2">
 <h2 class="anchored" data-anchor-id="run-full-processing">Run Full Processing</h2>
-<p>After you start processing, follow each step in the <strong>Console Output</strong>. When it finishes, explore results in the <strong>Processed Data</strong> tab or download them for external analysis.</p>
+<p>After you start processing, follow each step in the <em>Console Output</em>. When it finishes, explore results in the <em>Processed Data</em> tab or download them for external analysis.</p>
 </section>
 </section>
 <section id="visualize-data" class="level1">
 <h1>Visualize Data</h1>
-<p>Choose a plot type and generate the dataset. Check the <strong>Console Output</strong> to confirm the generation completed successfully. The <strong>Visualization</strong> tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.</p>
+<p>Choose a plot type and generate the dataset. Check the <em>Console Output</em> to confirm the generation completed successfully. The <em>Visualization</em> tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.</p>
 <p>You can configure and export figures with:</p>
 <ul>
 <li><strong>Export formats:</strong> HTML (interactive) or PNG (static)<br>
