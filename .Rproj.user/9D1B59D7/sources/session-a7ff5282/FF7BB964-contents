@@ -18,7 +18,7 @@ body {
 ```
 :::
 
-**From raw data to live, interactive visualization.**
+**From raw data to interactive visualization.**
 
 # Introduction
 
@@ -44,7 +44,11 @@ ZebraBox uses standard multi-well plates. Edge wells can show border effects. Th
 
 ## Load Raw Data
 
-Raw files must be in `.xlsx`. Convert your original `.xls` files before loading. When loading, wait to see *Upload complete* to click on the button. [The number of raw files must match your plate plans]{.underline}.
+Raw files must be in `.xlsx`. Convert your original `.xls` files before loading. When loading, wait to see *Upload complete* to click on the button.
+
+:::{ .warnings}
+The number of raw files must match your plate plans.
+:::
 
 ## Choose Primary Mode
 
@@ -75,15 +79,15 @@ Confirm that each raw data file is correctly paired with its corresponding plate
 
 ## Additional Parameters
 
-Before running full processing, upload your **period transition file** and **removal specification file**. Both must be `.xlsx` files with column names in the required format. **What is the required format?** Download a [sample period transition file](inputs/sample_period_transition.xlsx) and a [sample removal specification file](inputs/sample_removal_specification.xlsx).
+Before running full processing, upload your period transition file and removal specification file. Both must be `.xlsx` files with column names in the required format. *What is the required format?* Download a [sample period transition file](inputs/sample_period_transition.xlsx) and a [sample removal specification file](inputs/sample_removal_specification.xlsx).
 
 ## Run Full Processing
 
-After you start processing, follow each step in the **Console Output**. When it finishes, explore results in the **Processed Data** tab or download them for external analysis.
+After you start processing, follow each step in the *Console Output*. When it finishes, explore results in the *Processed Data* tab or download them for external analysis.
 
 # Visualize Data
 
-Choose a plot type and generate the dataset. Check the **Console Output** to confirm the generation completed successfully. The **Visualization** tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.
+Choose a plot type and generate the dataset. Check the *Console Output* to confirm the generation completed successfully. The *Visualization* tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.
 
 You can configure and export figures with:
 
