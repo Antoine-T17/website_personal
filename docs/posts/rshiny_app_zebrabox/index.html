@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Antoine Tourret">
-<meta name="dcterms.date" content="2025-08-19">
+<meta name="dcterms.date" content="2025-09-03">
 
 <title>RShiny application for zebrabox data treatment – Antoine Tourret</title>
 <style>
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 19, 2025</p>
+        <p class="date">September 3, 2025</p>
       </div>
     </div>
     
@@ -198,11 +198,11 @@ body {
 </section>
 <section id="load-or-create-a-plate-plan" class="level2">
 <h2 class="anchored" data-anchor-id="load-or-create-a-plate-plan">Load or Create a Plate Plan</h2>
-<p>ZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as <code>.xlsx</code> or view it as a table and figure. If you already have a plan, load it and wait to see <em>Upload complete</em> to click on the button. Column names must follow the required format. <em>What is a required format ?</em> Click <a href="inputs/sample_plate_plan_plate_1.xlsx">here</a> to download a 96-well sample plate plan.</p>
+<p>ZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as <code>.xlsx</code> or view it as a table and figure. If you already have a plan, load it and wait to see <em>Upload complete</em> to click on the button. Column names must follow the required format. <em>What is the required format?</em> Download a <a href="inputs/sample_plate_plan_plate_1.xlsx">96-well sample plate plan</a>.</p>
 </section>
 <section id="load-raw-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-raw-data">Load Raw Data</h2>
-<p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button. The number of raw files must match your plate plans.</p>
+<p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button. <u>The number of raw files must match your plate plans</u>.</p>
 </section>
 <section id="choose-primary-mode" class="level2">
 <h2 class="anchored" data-anchor-id="choose-primary-mode">Choose Primary Mode</h2>
@@ -226,6 +226,59 @@ Works even if no change occurred.</p></li>
 <li><p><strong>Vibration/Rest (VM)</strong><br>
 For experiments with vibration frequencies (Hz).</p></li>
 </ul>
+</section>
+</section>
+<section id="processing-data" class="level1">
+<h1>Processing Data</h1>
+<section id="match-raw-data-to-plate-plans" class="level2">
+<h2 class="anchored" data-anchor-id="match-raw-data-to-plate-plans">Match Raw Data to Plate Plans</h2>
+<p>Confirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan.</p>
+</section>
+<section id="additional-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="additional-parameters">Additional Parameters</h2>
+<p>Before running full processing, upload your <strong>period transition file</strong> and <strong>removal specification file</strong>. Both must be <code>.xlsx</code> files with column names in the required format. <strong>What is the required format?</strong> Download a <a href="inputs/sample_period_transition.xlsx">sample period transition file</a> and a <a href="inputs/sample_removal_specification.xlsx">sample removal specification file</a>.</p>
+</section>
+<section id="run-full-processing" class="level2">
+<h2 class="anchored" data-anchor-id="run-full-processing">Run Full Processing</h2>
+<p>After you start processing, follow each step in the <strong>Console Output</strong>. When it finishes, explore results in the <strong>Processed Data</strong> tab or download them for external analysis.</p>
+</section>
+</section>
+<section id="visualize-data" class="level1">
+<h1>Visualize Data</h1>
+<p>Choose a plot type and generate the dataset. Check the <strong>Console Output</strong> to confirm the generation completed successfully. The <strong>Visualization</strong> tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.</p>
+<p>You can configure and export figures with:</p>
+<ul>
+<li><strong>Export formats:</strong> HTML (interactive) or PNG (static)<br>
+</li>
+<li><strong>Theme:</strong> light or dark<br>
+</li>
+<li><strong>Zone selection:</strong> restrict to specific zones (if applicable)<br>
+</li>
+<li><strong>X-axis label order:</strong> define a custom order<br>
+</li>
+<li><strong>Label color:</strong> set category/condition colors<br>
+</li>
+<li><strong>Save options:</strong> export each figure as HTML or PNG</li>
+</ul>
+<section id="boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="boxplots">Boxplots</h2>
+<p>Visualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest).</p>
+</section>
+<section id="cumulative-boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative-boxplots">Cumulative Boxplots</h2>
+<p>View overall distributions independent of transition periods.</p>
+</section>
+<section id="delta-boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="delta-boxplots">Delta Boxplots</h2>
+<p>Compare values <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli.</p>
+</section>
+<section id="line-plots" class="level2">
+<h2 class="anchored" data-anchor-id="line-plots">Line Plots</h2>
+<p>Track activity or movement patterns over time to reveal trends and temporal dynamics.</p>
+</section>
+<section id="radar-plots" class="level2">
+<h2 class="anchored" data-anchor-id="radar-plots">Radar Plots</h2>
+<p>Get a global overview of multiple response variables across experimental conditions.</p>
 
 
 </section>
