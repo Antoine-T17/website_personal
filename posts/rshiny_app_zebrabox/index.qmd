@@ -114,6 +114,3 @@ Compare values **before**, **during**, and **after** a selected transition perio
 
 Track activity or movement patterns over time to reveal trends and temporal dynamics.
 
-## Radar Plots
-
-Get a global overview of multiple response variables across experimental conditions.
