@@ -46,7 +46,7 @@ ZebraBox uses standard multi-well plates. Edge wells can show border effects. Th
 
 Raw files must be in `.xlsx`. Convert your original `.xls` files before loading. When loading, wait to see *Upload complete* to click on the button.
 
-:::{ .warnings}
+::: warnings
 The number of raw files must match your plate plans.
 :::
 
@@ -91,12 +91,12 @@ Choose a plot type and generate the dataset. Check the *Console Output* to confi
 
 You can configure and export figures with:
 
-- **Export formats:** HTML (interactive) or PNG (static)  
-- **Theme:** light or dark  
-- **Zone selection:** restrict to specific zones (if applicable)  
-- **X-axis label order:** define a custom order  
-- **Label color:** set category/condition colors  
-- **Save options:** export each figure as HTML or PNG
+-   **Export formats:** HTML (interactive) or PNG (static)\
+-   **Theme:** light or dark\
+-   **Zone selection:** restrict to specific zones (if applicable)\
+-   **X-axis label order:** define a custom order\
+-   **Label color:** set category/condition colors\
+-   **Save options:** export each figure as HTML or PNG
 
 ## Boxplots
 
@@ -113,4 +113,3 @@ Compare values **before**, **during**, and **after** a selected transition perio
 ## Line Plots
 
 Track activity or movement patterns over time to reveal trends and temporal dynamics.
-

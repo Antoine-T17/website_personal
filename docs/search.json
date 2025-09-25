@@ -42,6 +42,55 @@
     "text": "Choose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
   },
   {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
+    "href": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Match Raw Data to Plate Plans",
+    "text": "Match Raw Data to Plate Plans\nConfirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
+    "href": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Additional Parameters",
+    "text": "Additional Parameters\nBefore running full processing, upload your period transition file and removal specification file. Both must be .xlsx files with column names in the required format. What is the required format? Download a sample period transition file and a sample removal specification file."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
+    "href": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Run Full Processing",
+    "text": "Run Full Processing\nAfter you start processing, follow each step in the Console Output. When it finishes, explore results in the Processed Data tab or download them for external analysis."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#boxplots",
+    "href": "posts/rshiny_app_zebrabox/index.html#boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Boxplots",
+    "text": "Boxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest)."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
+    "href": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Cumulative Boxplots",
+    "text": "Cumulative Boxplots\nView overall distributions independent of transition periods."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
+    "href": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Delta Boxplots",
+    "text": "Delta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli."
+  },
+  {
+    "objectID": "posts/rshiny_app_zebrabox/index.html#line-plots",
+    "href": "posts/rshiny_app_zebrabox/index.html#line-plots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Line Plots",
+    "text": "Line Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Antoine Tourret",
@@ -109,62 +158,6 @@
     "href": "portfolio.html",
     "title": "My portfolio",
     "section": "",
-    "text": "RShiny application for zebrabox data treatment\n\n\n\n\n\n\nR\n\n\nRshiny\n\n\napp\n\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\nAntoine Tourret\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
-    "href": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Match Raw Data to Plate Plans",
-    "text": "Match Raw Data to Plate Plans\nConfirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
-    "href": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Additional Parameters",
-    "text": "Additional Parameters\nBefore running full processing, upload your period transition file and removal specification file. Both must be .xlsx files with column names in the required format. What is the required format? Download a sample period transition file and a sample removal specification file."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Boxplots",
-    "text": "Boxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest)."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Cumulative Boxplots",
-    "text": "Cumulative Boxplots\nView overall distributions independent of transition periods."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Delta Boxplots",
-    "text": "Delta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#line-plots",
-    "href": "posts/rshiny_app_zebrabox/index.html#line-plots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Line Plots",
-    "text": "Line Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#radar-plots",
-    "href": "posts/rshiny_app_zebrabox/index.html#radar-plots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Radar Plots",
-    "text": "Radar Plots\nGet a global overview of multiple response variables across experimental conditions."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
-    "href": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Run Full Processing",
-    "text": "Run Full Processing\nAfter you start processing, follow each step in the Console Output. When it finishes, explore results in the Processed Data tab or download them for external analysis."
+    "text": "RShiny application for zebrabox data treatment\n\n\n\n\n\n\nR\n\n\nRshiny\n\n\napp\n\n\n\n\n\n\n\n\n\nSep 24, 2025\n\n\nAntoine Tourret\n\n\n\n\n\n\nNo matching items"
   }
 ]
