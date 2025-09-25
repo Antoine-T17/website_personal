@@ -6,3 +6,4 @@
 /.quarto/
 protect_map.csv
 .Renviron
+posts/rshiny_app_zebrabox/index.qmd
