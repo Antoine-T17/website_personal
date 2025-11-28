@@ -1,5 +1,166 @@
 [
   {
+    "objectID": "private_backups/index.html",
+    "href": "private_backups/index.html",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "",
+    "text": "From raw data to interactive visualization."
+  },
+  {
+    "objectID": "private_backups/index.html#get-the-app",
+    "href": "private_backups/index.html#get-the-app",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Get the app",
+    "text": "Get the app\nComing soon…"
+  },
+  {
+    "objectID": "private_backups/index.html#load-or-create-a-plate-plan",
+    "href": "private_backups/index.html#load-or-create-a-plate-plan",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Load or Create a Plate Plan",
+    "text": "Load or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is the required format? Download a 96-well sample plate plan."
+  },
+  {
+    "objectID": "private_backups/index.html#load-raw-data",
+    "href": "private_backups/index.html#load-raw-data",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Load Raw Data",
+    "text": "Load Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans."
+  },
+  {
+    "objectID": "private_backups/index.html#choose-primary-mode",
+    "href": "private_backups/index.html#choose-primary-mode",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Choose Primary Mode",
+    "text": "Choose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide."
+  },
+  {
+    "objectID": "private_backups/index.html#choose-secondary-mode",
+    "href": "private_backups/index.html#choose-secondary-mode",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Choose Secondary Mode",
+    "text": "Choose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
+  },
+  {
+    "objectID": "private_backups/index.html#match-raw-data-to-plate-plans",
+    "href": "private_backups/index.html#match-raw-data-to-plate-plans",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Match Raw Data to Plate Plans",
+    "text": "Match Raw Data to Plate Plans\nConfirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan."
+  },
+  {
+    "objectID": "private_backups/index.html#additional-parameters",
+    "href": "private_backups/index.html#additional-parameters",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Additional Parameters",
+    "text": "Additional Parameters\nBefore running full processing, upload your period transition file and removal specification file. Both must be .xlsx files with column names in the required format. What is the required format? Download a sample period transition file and a sample removal specification file."
+  },
+  {
+    "objectID": "private_backups/index.html#run-full-processing",
+    "href": "private_backups/index.html#run-full-processing",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Run Full Processing",
+    "text": "Run Full Processing\nAfter you start processing, follow each step in the Console Output. When it finishes, explore results in the Processed Data tab or download them for external analysis."
+  },
+  {
+    "objectID": "private_backups/index.html#boxplots",
+    "href": "private_backups/index.html#boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Boxplots",
+    "text": "Boxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest)."
+  },
+  {
+    "objectID": "private_backups/index.html#cumulative-boxplots",
+    "href": "private_backups/index.html#cumulative-boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Cumulative Boxplots",
+    "text": "Cumulative Boxplots\nView overall distributions independent of transition periods."
+  },
+  {
+    "objectID": "private_backups/index.html#delta-boxplots",
+    "href": "private_backups/index.html#delta-boxplots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Delta Boxplots",
+    "text": "Delta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli."
+  },
+  {
+    "objectID": "private_backups/index.html#line-plots",
+    "href": "private_backups/index.html#line-plots",
+    "title": "RShiny application for zebrabox data treatment",
+    "section": "Line Plots",
+    "text": "Line Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "My portfolio",
+    "section": "",
+    "text": "RShiny application for zebrabox data treatment\n\n\n\nR\n\nRshiny\n\napp\n\n\n\n\n\n\n\n\n\nOct 7, 2025\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html#contact-information",
+    "href": "cv.html#contact-information",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nDate of Birth: December 17, 2000\n\nEmail: antoinetourretpro@gmail.com\n\nLinkedIn: linkedin.com/in/antoine-tourret-b70672175"
+  },
+  {
+    "objectID": "cv.html#professional-summary",
+    "href": "cv.html#professional-summary",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nPhD candidate in ecotoxicology with expertise in assessing the impacts of emerging pollutants (e.g., nanoplastics, optical brighteners, glyphosate) on aquatic organisms. Skilled in experimental design, algal and microbial cultures, and data analysis using R. Passionate about data visualization."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\nMaster’s in Ecotoxicology and Environmental Chemistry, International Track MOBBIDIQ\nUniversity of Bordeaux – INRS Québec\n2021 – 2023 (GPA: 15.5/20)\nMain subjects: Aquatic ecotoxicology, analytical chemistry, biostatistics, regulations.\nBachelor’s (L3) in Life Sciences - Organisms and Ecosystems\nUniversity of Bordeaux\n2020 – 2021 (GPA: 14.8/20)\nMain subjects: Cellular toxicology, ecosystem dynamics and biodiversity, biostatistics.\nDUT in Biological Engineering, Environmental Engineering Option\nIUT Grand Ouest Normandie, Caen\n2018 – 2020 (GPA: 14.4/20)\nMain subjects: Biochemistry, general and organic chemistry, microbial ecology, ecotoxicology."
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nPhD Thesis\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR and T. SRIKANTHASAMY\nOctober 2024 – Present\n\nEcotoxicological impacts of micro- and nanoplastics on freshwater organisms and evaluation of the toxicity of nanoplastics treatments by advanced oxidation processes.\n\nResearch Engineer\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR\nFebruary 2024 – September 2024\n\nMonitoring the ecotoxic potential of nanoplastics and their degradation products during and after advanced oxidation processes in microcrustacean and unicellular algae models (ANR-22-CE04-0011-02).\n\nM2 Internship\nInstitut National de la Recherche pour l’Agriculture et l’Environnement, Cestas, France\nSupervision: C. BONNINEAU\nJanuary 2023 – June 2023\n\nStudy of the ecotoxicological potential of glyphosate, AMPA, and optical brighteners on a pond phytoplankton biofilm and on monospecific algal cultures.\n\nMaster’s Internship (Bi-Diploma Program)\nInstitut National de la Recherche Scientifique, Centre Eau-Terre-Environnement, Montréal & Québec, Canada\nSupervision: I. LAVOIE and P. JUNEAU\nJanuary 2022 – June 2023\n\nStudy of the ecotoxicological potential of optical brighteners on a river periphytic biofilm and on monospecific algal cultures in axenic conditions.\n\nL3 Internship\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR & F. SANDRE\nMay 2021 – June 2021\n\nStudy of the ecotoxicological potential of paraben substitutes in a zebrafish larva model within the COSMET’EAU project.\n\nDUT Internship\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR & F. SANDRE June 2020\n\nData processing using RStudio for ecotoxicological tests of a mixture of pharmaceutical pollutants on a zebrafish larva model within the OPUR5 program."
+  },
+  {
+    "objectID": "cv.html#publications-communications",
+    "href": "cv.html#publications-communications",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Publications & Communications",
+    "text": "Publications & Communications\n\nArticles to be Published\n\nEcotoxicological effects of optical brighteners agents on the growth and photosynthesis of Chlorella vulgaris and Microcystis aeruginosa. 2024. A. Tourret, M. Laviale, I. Lavoie, C. Bonnineau & P. Juneau.\nAssessment of the toxic effects of an optical brightener agent alone and in mixture with glyphosate and its main metabolite (aminomethylphosphonic acid) on freshwater benthic microbial communities. 2025. A. Tourret, M. Laviale, P. Juneau, I. Lavoie, S. Morin, D. Milan-Navarro, A. Moreira, N. Mazzella & C. Bonnineau. Targeted journal: FEMS Microbiology Ecology.\n\n\n\nCommunications\n\nPoster: Characterization of the ecotoxicological potential of polystyrene nanoplastics that have or have not undergone advanced oxidation processes on Chlamydomonas reinhardtii and Daphnia magna. A. Tourret, L. Garrigue-Antar. Annual Congress of the Francophone Society for Environmental Health, November 2024.\nVideo: Flash edition 20h: Optical brighteners in French waterways, impacts on aquatic organisms. A. Tourret. Joint Ecotoxicology Colloquium Chapter Saint-Laurent-EcotoQ, June 2022, Québec, Canada.\nFirst prize in the international scientific popularization contest, video category.\nFlash Talk: Monitoring the response of biofilms and snails to optical brighteners. A. Tourret. 31st Annual Symposium of the Interuniversity Research Group in Limnology, March 2022, Montréal, Canada.\nSecond prize for the best short presentation, M.Sc. category."
+  },
+  {
+    "objectID": "cv.html#teaching-experience",
+    "href": "cv.html#teaching-experience",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\n\nChemical Risks (Bachelor Year 1): Lectures and practical work (6 hours and 9 hours).\n\nStatistical Tools (Bachelor Year 2): Tutorials and practicals (13.5 hours and 8 hours).\n\nStatistical Tools (Bachelor Year 3): Tutorials and practicals (4.5 hours)."
+  },
+  {
+    "objectID": "cv.html#skills-and-interests",
+    "href": "cv.html#skills-and-interests",
+    "title": "Antoine Tourret - Curriculum Vitae",
+    "section": "Skills and Interests",
+    "text": "Skills and Interests\n\nScientific Skills: Sample preparation in synchronous fluorescence spectroscopy / LC-MS, training in HPLC-UV, mastery of monospecific algal cultures (Chlorella vulgaris, Microcystis aeruginosa, Chlamydomonas reinhardtii, Raphidocelis subcapitata) in axenic or non-axenic conditions and periphytic microbial cultures, development of Daphnia cultures (Daphnia magna), design of experimental setups for OECD acute toxicity tests or non-regulated chronic toxicity tests.\nIT Skills: RStudio, RShiny app, Quarto, Microsoft Office Suite (Excel, PowerPoint, Word).\nLanguages: French (native), English (C1).\nPersonal Interests: Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis (Xu Xin the GOAT), music (guitar, a bit of piano)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Antoine Tourret",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Antoine Tourret",
+    "section": "",
+    "text": "Hi ! I’m a PhD student in aquatic ecotoxicology.  I’m currently investigating the toxicity of micro and nanoplastic on aquatic organisms.  Additionally, I manage data processing, visualization, and produce visually engaging reports using Quarto."
+  },
+  {
     "objectID": "posts/rshiny_app_zebrabox/index.html",
     "href": "posts/rshiny_app_zebrabox/index.html",
     "title": "RShiny application for zebrabox data treatment",
@@ -89,75 +250,5 @@
     "title": "RShiny application for zebrabox data treatment",
     "section": "Line Plots",
     "text": "Line Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Antoine Tourret",
-    "section": "",
-    "text": "Hi ! I’m a PhD student in aquatic ecotoxicology.  I’m currently investigating the toxicity of micro and nanoplastic on aquatic organisms.  Additionally, I manage data processing, visualization, and produce visually engaging reports using Quarto."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Antoine Tourret",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "cv.html#contact-information",
-    "href": "cv.html#contact-information",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Contact Information",
-    "text": "Contact Information\n\nDate of Birth: December 17, 2000\n\nEmail: antoinetourretpro@gmail.com\n\nLinkedIn: linkedin.com/in/antoine-tourret-b70672175"
-  },
-  {
-    "objectID": "cv.html#professional-summary",
-    "href": "cv.html#professional-summary",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Professional Summary",
-    "text": "Professional Summary\nPhD candidate in ecotoxicology with expertise in assessing the impacts of emerging pollutants (e.g., nanoplastics, optical brighteners, glyphosate) on aquatic organisms. Skilled in experimental design, algal and microbial cultures, and data analysis using R. Passionate about data visualization."
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Education",
-    "text": "Education\n\nMaster’s in Ecotoxicology and Environmental Chemistry, International Track MOBBIDIQ\nUniversity of Bordeaux – INRS Québec\n2021 – 2023 (GPA: 15.5/20)\nMain subjects: Aquatic ecotoxicology, analytical chemistry, biostatistics, regulations.\nBachelor’s (L3) in Life Sciences - Organisms and Ecosystems\nUniversity of Bordeaux\n2020 – 2021 (GPA: 14.8/20)\nMain subjects: Cellular toxicology, ecosystem dynamics and biodiversity, biostatistics.\nDUT in Biological Engineering, Environmental Engineering Option\nIUT Grand Ouest Normandie, Caen\n2018 – 2020 (GPA: 14.4/20)\nMain subjects: Biochemistry, general and organic chemistry, microbial ecology, ecotoxicology."
-  },
-  {
-    "objectID": "cv.html#professional-experience",
-    "href": "cv.html#professional-experience",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\nPhD Thesis\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR and T. SRIKANTHASAMY\nOctober 2024 – Present\n\nEcotoxicological impacts of micro- and nanoplastics on freshwater organisms and evaluation of the toxicity of nanoplastics treatments by advanced oxidation processes.\n\nResearch Engineer\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR\nFebruary 2024 – September 2024\n\nMonitoring the ecotoxic potential of nanoplastics and their degradation products during and after advanced oxidation processes in microcrustacean and unicellular algae models (ANR-22-CE04-0011-02).\n\nM2 Internship\nInstitut National de la Recherche pour l’Agriculture et l’Environnement, Cestas, France\nSupervision: C. BONNINEAU\nJanuary 2023 – June 2023\n\nStudy of the ecotoxicological potential of glyphosate, AMPA, and optical brighteners on a pond phytoplankton biofilm and on monospecific algal cultures.\n\nMaster’s Internship (Bi-Diploma Program)\nInstitut National de la Recherche Scientifique, Centre Eau-Terre-Environnement, Montréal & Québec, Canada\nSupervision: I. LAVOIE and P. JUNEAU\nJanuary 2022 – June 2023\n\nStudy of the ecotoxicological potential of optical brighteners on a river periphytic biofilm and on monospecific algal cultures in axenic conditions.\n\nL3 Internship\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR & F. SANDRE\nMay 2021 – June 2021\n\nStudy of the ecotoxicological potential of paraben substitutes in a zebrafish larva model within the COSMET’EAU project.\n\nDUT Internship\nLaboratoire Eau Environnement et Systèmes Urbains – University Paris-Est Créteil, Créteil, France\nSupervision: L. GARRIGUE-ANTAR & F. SANDRE June 2020\n\nData processing using RStudio for ecotoxicological tests of a mixture of pharmaceutical pollutants on a zebrafish larva model within the OPUR5 program."
-  },
-  {
-    "objectID": "cv.html#publications-communications",
-    "href": "cv.html#publications-communications",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Publications & Communications",
-    "text": "Publications & Communications\n\nArticles to be Published\n\nEcotoxicological effects of optical brighteners agents on the growth and photosynthesis of Chlorella vulgaris and Microcystis aeruginosa. 2024. A. Tourret, M. Laviale, I. Lavoie, C. Bonnineau & P. Juneau.\nAssessment of the toxic effects of an optical brightener agent alone and in mixture with glyphosate and its main metabolite (aminomethylphosphonic acid) on freshwater benthic microbial communities. 2025. A. Tourret, M. Laviale, P. Juneau, I. Lavoie, S. Morin, D. Milan-Navarro, A. Moreira, N. Mazzella & C. Bonnineau. Targeted journal: FEMS Microbiology Ecology.\n\n\n\nCommunications\n\nPoster: Characterization of the ecotoxicological potential of polystyrene nanoplastics that have or have not undergone advanced oxidation processes on Chlamydomonas reinhardtii and Daphnia magna. A. Tourret, L. Garrigue-Antar. Annual Congress of the Francophone Society for Environmental Health, November 2024.\nVideo: Flash edition 20h: Optical brighteners in French waterways, impacts on aquatic organisms. A. Tourret. Joint Ecotoxicology Colloquium Chapter Saint-Laurent-EcotoQ, June 2022, Québec, Canada.\nFirst prize in the international scientific popularization contest, video category.\nFlash Talk: Monitoring the response of biofilms and snails to optical brighteners. A. Tourret. 31st Annual Symposium of the Interuniversity Research Group in Limnology, March 2022, Montréal, Canada.\nSecond prize for the best short presentation, M.Sc. category."
-  },
-  {
-    "objectID": "cv.html#teaching-experience",
-    "href": "cv.html#teaching-experience",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Teaching Experience",
-    "text": "Teaching Experience\n\nChemical Risks (Bachelor Year 1): Lectures and practical work (6 hours and 9 hours).\n\nStatistical Tools (Bachelor Year 2): Tutorials and practicals (13.5 hours and 8 hours).\n\nStatistical Tools (Bachelor Year 3): Tutorials and practicals (4.5 hours)."
-  },
-  {
-    "objectID": "cv.html#skills-and-interests",
-    "href": "cv.html#skills-and-interests",
-    "title": "Antoine Tourret - Curriculum Vitae",
-    "section": "Skills and Interests",
-    "text": "Skills and Interests\n\nScientific Skills: Sample preparation in synchronous fluorescence spectroscopy / LC-MS, training in HPLC-UV, mastery of monospecific algal cultures (Chlorella vulgaris, Microcystis aeruginosa, Chlamydomonas reinhardtii, Raphidocelis subcapitata) in axenic or non-axenic conditions and periphytic microbial cultures, development of Daphnia cultures (Daphnia magna), design of experimental setups for OECD acute toxicity tests or non-regulated chronic toxicity tests.\nIT Skills: RStudio, RShiny app, Quarto, Microsoft Office Suite (Excel, PowerPoint, Word).\nLanguages: French (native), English (C1).\nPersonal Interests: Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis (Xu Xin the GOAT), music (guitar, a bit of piano)."
-  },
-  {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "My portfolio",
-    "section": "",
-    "text": "RShiny application for zebrabox data treatment\n\n\n\n\n\n\nR\n\n\nRshiny\n\n\napp\n\n\n\n\n\n\n\n\n\nSep 24, 2025\n\n\nAntoine Tourret\n\n\n\n\n\n\nNo matching items"
   }
 ]
