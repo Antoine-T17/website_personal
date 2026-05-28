@@ -17,6 +17,13 @@ website:
         href: https://www.linkedin.com/in/antoine-tourret-b70672175/
       - icon: github
         href: https://github.com/Antoine-T17
+  back-to-top-navigation: true
+  page-footer:
+    border: true
+    left: |
+      © 2026 Antoine TOURRET.
+      Content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+    right: "Made with Quarto"
 format:
   html:
     theme:

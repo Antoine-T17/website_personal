@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Antoine Tourret">
-<meta name="dcterms.date" content="2025-10-07">
+<meta name="dcterms.date" content="2026-05-28">
 
-<title>RShiny application for zebrabox data treatment – Antoine Tourret</title>
+<title>zebRabox: an R package for ZebraBox data treatment – Antoine Tourret</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -43,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-9603440839c0ed62cd54dc23e72b278e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-f4a494aaaa964839121371198f4491e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-3ca61dbc95f144f8af60eaf93d6b64de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f4a494aaaa964839121371198f4491e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -294,11 +329,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">RShiny application for zebrabox data treatment</h1>
+      <h1 class="title">zebRabox: an R package for ZebraBox data treatment</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">Rshiny</div>
-                <div class="quarto-category">app</div>
+                <div class="quarto-category">package</div>
               </div>
                   </div>
   </div>
@@ -316,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 7, 2025</p>
+        <p class="date">May 28, 2026</p>
       </div>
     </div>
     
@@ -345,36 +380,41 @@ body {
 </style>
 </div>
 <p><strong>From raw data to interactive visualization.</strong></p>
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The ZebraBox chamber is a complete system for high-throughput behavioral tests. Applications include pharmacology, toxicology, ecotoxicology, and behavioral genetics. The device holds 6-, 12-, 24-, 48- or 96-well plates and has a high-resolution camera which films in visible or infrared light. Tests run from minutes to days and each data point links to a fixed time window (integration period). Output files are <code>.raw</code> and <code>.xls</code>.</p>
 </section>
-<section id="why-this-app" class="level1">
-<h1>Why This App?</h1>
-<p>Data in many files and formats leads to errors, duplicates, and manual fixes. This app centralizes everything in one place. You get accurate, up-to-date, and auditable results without code. <br></p>
+<section id="why-zebrabox" class="level2">
+<h2 class="anchored" data-anchor-id="why-zebrabox">Why zebRabox?</h2>
+<p>Data in many files and formats leads to errors, duplicates, and manual fixes. <strong>zebRabox</strong> is an R package that wraps a Shiny application to centralize everything in one place. You get accurate, up-to-date, and auditable results without writing code. <br></p>
 <div class="centered-text">
 <p><strong>Simple : drag, drop, clean, merge, and analyze in a few clicks.</strong></p>
 </div>
 </section>
-<section id="how-to-use-the-app" class="level1">
-<h1>How to Use the App ?</h1>
-<section id="get-the-app" class="level2">
-<h2 class="anchored" data-anchor-id="get-the-app">Get the app</h2>
-<p>Coming soon…</p>
+<section id="how-to-use-zebrabox" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-zebrabox">How to Use zebRabox?</h2>
+<section id="install-the-package" class="level3">
+<h3 class="anchored" data-anchor-id="install-the-package">Install the package</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"Antoine-T17/zebRabox"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>, <span class="at">upgrade =</span> <span class="st">"never"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="load-or-create-a-plate-plan" class="level2">
-<h2 class="anchored" data-anchor-id="load-or-create-a-plate-plan">Load or Create a Plate Plan</h2>
+<section id="launch-the-app" class="level3">
+<h3 class="anchored" data-anchor-id="launch-the-app">Launch the app</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>zebRabox<span class="sc">::</span><span class="fu">run_app</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="load-or-create-a-plate-plan" class="level3">
+<h3 class="anchored" data-anchor-id="load-or-create-a-plate-plan">Load or Create a Plate Plan</h3>
 <p>ZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as <code>.xlsx</code> or view it as a table and figure. If you already have a plan, load it and wait to see <em>Upload complete</em> to click on the button. Column names must follow the required format. <em>What is the required format?</em> Download a <a href="inputs/sample_plate_plan_plate_1.xlsx">96-well sample plate plan</a>.</p>
 </section>
-<section id="load-raw-data" class="level2">
-<h2 class="anchored" data-anchor-id="load-raw-data">Load Raw Data</h2>
+<section id="load-raw-data" class="level3">
+<h3 class="anchored" data-anchor-id="load-raw-data">Load Raw Data</h3>
 <p>Raw files must be in <code>.xlsx</code>. Convert your original <code>.xls</code> files before loading. When loading, wait to see <em>Upload complete</em> to click on the button.</p>
 <div class="warnings">
 <p>The number of raw files must match your plate plans.</p>
 </div>
 </section>
-<section id="choose-primary-mode" class="level2">
-<h2 class="anchored" data-anchor-id="choose-primary-mode">Choose Primary Mode</h2>
+<section id="choose-primary-mode" class="level3">
+<h3 class="anchored" data-anchor-id="choose-primary-mode">Choose Primary Mode</h3>
 <ul>
 <li><p><strong>Tracking mode</strong><br>
 Follows each subject’s path.<br>
@@ -386,8 +426,8 @@ Yields high, medium, or low activity levels.<br>
 See details in the <a href="inputs/zebrabox_guidelines.pdf">ZebraBox guide</a>.</p></li>
 </ul>
 </section>
-<section id="choose-secondary-mode" class="level2">
-<h2 class="anchored" data-anchor-id="choose-secondary-mode">Choose Secondary Mode</h2>
+<section id="choose-secondary-mode" class="level3">
+<h3 class="anchored" data-anchor-id="choose-secondary-mode">Choose Secondary Mode</h3>
 <ul>
 <li><p><strong>Light/Dark (LDM)</strong><br>
 For experiments with light shifts (0–100% or 100–0%).<br>
@@ -397,28 +437,26 @@ For experiments with vibration frequencies (Hz).</p></li>
 </ul>
 </section>
 </section>
-<section id="processing-data" class="level1">
-<h1>Processing Data</h1>
-<section id="match-raw-data-to-plate-plans" class="level2">
-<h2 class="anchored" data-anchor-id="match-raw-data-to-plate-plans">Match Raw Data to Plate Plans</h2>
+<section id="processing-data" class="level2">
+<h2 class="anchored" data-anchor-id="processing-data">Processing Data</h2>
+<section id="match-raw-data-to-plate-plans" class="level3">
+<h3 class="anchored" data-anchor-id="match-raw-data-to-plate-plans">Match Raw Data to Plate Plans</h3>
 <p>Confirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan.</p>
 </section>
-<section id="additional-parameters" class="level2">
-<h2 class="anchored" data-anchor-id="additional-parameters">Additional Parameters</h2>
+<section id="additional-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="additional-parameters">Additional Parameters</h3>
 <p>Before running full processing, upload your period transition file and removal specification file. Both must be <code>.xlsx</code> files with column names in the required format. <em>What is the required format?</em> Download a <a href="inputs/sample_period_transition.xlsx">sample period transition file</a> and a <a href="inputs/sample_removal_specification.xlsx">sample removal specification file</a>.</p>
 </section>
-<section id="run-full-processing" class="level2">
-<h2 class="anchored" data-anchor-id="run-full-processing">Run Full Processing</h2>
+<section id="run-full-processing" class="level3">
+<h3 class="anchored" data-anchor-id="run-full-processing">Run Full Processing</h3>
 <p>After you start processing, follow each step in the <em>Console Output</em>. When it finishes, explore results in the <em>Processed Data</em> tab or download them for external analysis.</p>
 </section>
 </section>
-<section id="visualize-data" class="level1">
-<h1>Visualize Data</h1>
+<section id="visualize-data" class="level2">
+<h2 class="anchored" data-anchor-id="visualize-data">Visualize Data</h2>
 <p>Choose a plot type and generate the dataset. Check the <em>Console Output</em> to confirm the generation completed successfully. The <em>Visualization</em> tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.</p>
 <p>You can configure and export figures with:</p>
 <ul>
-<li><strong>Export formats:</strong> HTML (interactive) or PNG (static)<br>
-</li>
 <li><strong>Theme:</strong> light or dark<br>
 </li>
 <li><strong>Zone selection:</strong> restrict to specific zones (if applicable)<br>
@@ -427,29 +465,29 @@ For experiments with vibration frequencies (Hz).</p></li>
 </li>
 <li><strong>Label color:</strong> set category/condition colors<br>
 </li>
-<li><strong>Save options:</strong> export each figure as HTML or PNG</li>
+<li><strong>Save options:</strong> export each figure as PNG</li>
 </ul>
-<section id="boxplots" class="level2">
-<h2 class="anchored" data-anchor-id="boxplots">Boxplots</h2>
+<section id="boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="boxplots">Boxplots</h3>
 <p>Visualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest).</p>
 </section>
-<section id="cumulative-boxplots" class="level2">
-<h2 class="anchored" data-anchor-id="cumulative-boxplots">Cumulative Boxplots</h2>
+<section id="cumulative-boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="cumulative-boxplots">Cumulative Boxplots</h3>
 <p>View overall distributions independent of transition periods.</p>
 </section>
-<section id="delta-boxplots" class="level2">
-<h2 class="anchored" data-anchor-id="delta-boxplots">Delta Boxplots</h2>
+<section id="delta-boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="delta-boxplots">Delta Boxplots</h3>
 <p>Compare values <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli.</p>
 </section>
-<section id="line-plots" class="level2">
-<h2 class="anchored" data-anchor-id="line-plots">Line Plots</h2>
+<section id="line-plots" class="level3">
+<h3 class="anchored" data-anchor-id="line-plots">Line Plots</h3>
 <p>Track activity or movement patterns over time to reveal trends and temporal dynamics.</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -863,6 +901,19 @@ For experiments with vibration frequencies (Hz).</p></li>
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Antoine TOURRET. Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Made with Quarto</p>
+</div>
+  </div>
+</footer>
 
 
 

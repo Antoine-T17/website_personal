@@ -1,1 +1,159 @@
 /* css styles */
+
+/* ── Palette ─────────────────────────────────────────────────
+   Eau profonde  : #1E6B72
+   Ciel bleu     : #5AACB4
+   Ambre doré    : #D4882A
+   Fond clair    : #F4F8F8
+   Fond nuit     : #0d1b2a
+──────────────────────────────────────────────────────────── */
+
+/* ── Light mode ─────────────────────────────────────────── */
+body.quarto-light {
+  background-color: #F4F8F8;
+  color: #1a1a1a;
+}
+
+body.quarto-light a {
+  color: #1E6B72;
+}
+
+body.quarto-light a:hover {
+  color: #D4882A;
+  text-decoration: underline;
+}
+
+body.quarto-light h1,
+body.quarto-light h2,
+body.quarto-light h3 {
+  color: #1E6B72;
+}
+
+body.quarto-light p.subtitle {
+  color: #5AACB4 !important;
+  font-size: 1.05rem;
+}
+
+body.quarto-light .about-links .about-link {
+  border-color: #1E6B72 !important;
+  color: #1E6B72 !important;
+  border-radius: 6px;
+}
+
+body.quarto-light .about-links .about-link:hover {
+  background-color: #1E6B72 !important;
+  color: #ffffff !important;
+}
+
+/* ── Dark mode ───────────────────────────────────────────── */
+body.quarto-dark {
+  background-color: #0d1b2a !important;
+  color: #f0f0f0 !important;
+}
+
+body.quarto-dark .navbar,
+body.quarto-dark .sidebar,
+body.quarto-dark .quarto-sidebar,
+body.quarto-dark .panel-sidebar {
+  background-color: #0a1520 !important;
+}
+
+body.quarto-dark main,
+body.quarto-dark .page-layout-full,
+body.quarto-dark #quarto-content,
+body.quarto-dark .quarto-post,
+body.quarto-dark .card {
+  background-color: #0d1b2a !important;
+  color: #f0f0f0 !important;
+}
+
+body.quarto-dark a {
+  color: #5AACB4 !important;
+}
+
+body.quarto-dark a:hover {
+  color: #D4882A !important;
+  text-decoration: underline;
+}
+
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3,
+body.quarto-dark h4,
+body.quarto-dark h5 {
+  color: #5AACB4 !important;
+}
+
+body.quarto-dark p.subtitle {
+  color: #5AACB4 !important;
+  font-size: 1.05rem;
+}
+
+body.quarto-dark .about-links .about-link {
+  border-color: #5AACB4 !important;
+  color: #5AACB4 !important;
+  border-radius: 6px;
+  background-color: transparent !important;
+}
+
+body.quarto-dark .about-links .about-link:hover {
+  background-color: #5AACB4 !important;
+  color: #0d1b2a !important;
+}
+
+body.quarto-dark .quarto-title-banner,
+body.quarto-dark .title-block-banner {
+  background-color: #0a1520 !important;
+}
+
+body.quarto-dark code,
+body.quarto-dark pre {
+  background-color: #111f2e !important;
+  color: #c8e6c9 !important;
+}
+
+/* ── Navbar accent (both modes) ──────────────────────────── */
+.navbar {
+  border-bottom: 3px solid #5AACB4;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.nav-footer {
+  border-top: 2px solid #5AACB4 !important;
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+}
+
+body.quarto-light .nav-footer {
+  background-color: #e8f0f1;
+  color: #333333;
+}
+
+body.quarto-dark .nav-footer {
+  background-color: #0a1520 !important;
+  color: #c0c0c0 !important;
+}
+
+body.quarto-dark .nav-footer a {
+  color: #5AACB4 !important;
+}
+
+body.quarto-dark .nav-footer a:hover {
+  color: #D4882A !important;
+}
+
+/* ── ZebraBox logo size in listing cards ─────────────────── */
+.quarto-post .thumbnail,
+.quarto-post .thumbnail-image {
+  max-height: 110px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quarto-post .thumbnail img {
+  max-height: 110px;
+  width: auto;
+  object-fit: contain;
+}
