@@ -1,0 +1,44 @@
+---
+title: "Antoine Tourret"
+subtitle: "PhD Student<br>Aquatic Ecotoxicology"
+image: inputs/photos/profile_pic/my_profile_pic.png
+about:
+  template: trestles
+  image-width: 75%
+  image-shape: rounded
+  links:
+    - icon: envelope
+      text: Email
+      href: "mailto:antoinetourretpro@gmail.com"
+    - icon: github
+      text: GitHub
+      href: https://github.com/Antoine-T17
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/antoine-tourret-b70672175/
+    - icon: instagram
+      text: "@antoine_cumulus"
+      href: https://www.instagram.com/antoine_cumulus/
+---
+
+I am a PhD student at **Université Paris-Est Créteil**, within the **Laboratoire Eau Environnements et Systèmes Urbains (LEESU)**.
+
+My research sits at the intersection of aquatic ecotoxicology and data science, using *Daphnia magna* as a biological model.
+
+## Research
+
+I am currently working on two projects:
+
+**ANR AOP-NANOP** — This project aims to assess the ecotoxicity of model nanoplastics synthesised in the laboratory by the Institut des Sciences Analytiques et de Physico-Chimie pour l'Environnement et les Matériaux (IPREM) in Pau. The goal is to identify robust explanatory factors of nanoplastic toxicity on *Daphnia magna*.
+
+**Recycled urban furniture** — This second project evaluates the toxicity of recycled plastic urban furniture, again using the water flea as a sentinel organism.
+
+## Beyond the lab
+
+I have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes --- and capturing them at just the right moment before they vanish.
+
+Find my photos on Instagram: [\@antoine_cumulus](https://www.instagram.com/antoine_cumulus/).
+
+I also enjoy everything related to **data visualization** --- building clear, elegant, and reproducible reports with [Quarto](https://quarto.org/).
+
+One last thing: I own more than thirty ties and wear them pratically everyday (except when the weather is too hot).

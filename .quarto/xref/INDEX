@@ -22,5 +22,23 @@
   },
   "posts/rshiny_app_zebrabox/index.qmd": {
     "index.html": "17bb5992"
+  },
+  "my_main_qmd/about.qmd": {
+    "about.html": "d6b0a50c"
+  },
+  "my_main_qmd/cv.qmd": {
+    "cv.html": "dc8495fc"
+  },
+  "my_main_qmd/index.qmd": {
+    "index.html": "d4d873ef"
+  },
+  "my_main_qmd/portfolio.qmd": {
+    "portfolio.html": "c176d86b"
+  },
+  "private_backups/index.qmd": {
+    "index.html": "4c056aac"
+  },
+  "posts/opur_6/index.qmd": {
+    "index.html": "f7044a3c"
   }
 }

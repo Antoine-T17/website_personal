@@ -1,0 +1,71 @@
+==============================================================
+PROJET : Site web personnel d'Antoine Tourret
+==============================================================
+
+TYPE DE PROJET
+--------------
+Site web statique généré avec Quarto (type: website).
+Les fichiers HTML produits sont placés dans le dossier docs/,
+ce qui permet une publication directe via GitHub Pages.
+
+AUTEUR
+------
+Antoine Tourret
+Doctorant en écotoxicologie aquatique (depuis octobre 2024)
+Laboratoire LEESU – Université Paris Est Créteil
+Email : antoinetourretpro@gmail.com
+LinkedIn : linkedin.com/in/antoine-tourret-b70672175
+GitHub   : github.com/Antoine-T17
+
+SUJET DE THÈSE
+--------------
+Impacts écotoxicologiques des micro- et nanoplastiques sur les
+organismes d'eau douce, et évaluation de leur toxicité après
+traitement par procédés d'oxydation avancée.
+
+STRUCTURE DU SITE
+-----------------
+Pages principales (navbar) :
+  - index.qmd   → Page d'accueil (présentation courte)
+  - portfolio.qmd → Listing automatique des articles du dossier posts/
+  - cv.qmd       → Curriculum Vitae complet en HTML
+
+Icônes dans la barre de navigation :
+  - LinkedIn et GitHub
+
+Thème HTML : cosmo (clair) / cyborg (sombre)
+Feuille de style personnalisée : styles.css
+
+CONTENU DU PORTFOLIO (posts/)
+------------------------------
+- posts/rshiny_app_zebrabox/
+    Article documentant une application RShiny développée pour
+    traiter automatiquement les données brutes du dispositif ZebraBox
+    (tests comportementaux haut-débit sur organismes aquatiques).
+    Catégories : R, Rshiny, app.
+    L'app est disponible via : shiny::runGitHub("Rshiny_app_zebrabox", "Antoine-T17")
+
+STACK TECHNIQUE
+---------------
+- Quarto          : génération du site statique
+- R / RStudio     : environnement de développement
+- RShiny          : développement d'applications interactives
+- GitHub Pages    : hébergement (dossier docs/ comme source)
+- HTML/CSS        : personnalisation du rendu
+
+FICHIERS NOTABLES
+-----------------
+- _quarto.yml          : configuration principale du site
+- styles.css           : CSS personnalisé
+- do_not_push.R        : script R à ne pas versionner (données sensibles ?)
+- docs/                : output du rendu Quarto (site compilé)
+- private_backups/     : sauvegardes privées (non publiées)
+
+ÉTAT DU DÉPÔT (au 2026-05-28)
+------------------------------
+Branche active : main
+Nombreux fichiers non commités (nouveaux .qmd, images, inputs).
+Le post "opur_6" semble avoir été supprimé du site.
+Commits récents numérotés simplement ("Commit 27", etc.).
+
+==============================================================

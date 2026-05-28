@@ -95,7 +95,7 @@
     "href": "portfolio.html",
     "title": "My portfolio",
     "section": "",
-    "text": "RShiny application for zebrabox data treatment\n\n\n\nR\n\nRshiny\n\napp\n\n\n\n\n\n\n\n\n\nOct 7, 2025\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items"
+    "text": "zebRabox: an R package for ZebraBox data treatment\n\n\n\nR\n\nRshiny\n\npackage\n\n\n\n\n\n\n\n\n\nMay 28, 2026\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "cv.html#contact-information",
@@ -151,104 +151,69 @@
     "href": "about.html",
     "title": "Antoine Tourret",
     "section": "",
-    "text": "About this blog"
+    "text": "About this blog\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Antoine Tourret",
     "section": "",
-    "text": "Hi ! I’m a PhD student in aquatic ecotoxicology.  I’m currently investigating the toxicity of micro and nanoplastic on aquatic organisms.  Additionally, I manage data processing, visualization, and produce visually engaging reports using Quarto."
+    "text": "I am a PhD student at Université Paris-Est Créteil, within the Laboratoire Eau Environnements et Systèmes Urbains (LEESU).\nMy research sits at the intersection of aquatic ecotoxicology and data science, using Daphnia magna as a biological model."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Antoine Tourret",
+    "section": "Research",
+    "text": "Research\nI am currently working on two projects:\nANR AOP-NANOP — This project aims to assess the ecotoxicity of model nanoplastics synthesised in the laboratory by the Institut des Sciences Analytiques et de Physico-Chimie pour l’Environnement et les Matériaux (IPREM) in Pau. The goal is to identify robust explanatory factors of nanoplastic toxicity on Daphnia magna.\nRecycled urban furniture — This second project evaluates the toxicity of recycled plastic urban furniture, again using the water flea as a sentinel organism."
+  },
+  {
+    "objectID": "index.html#beyond-the-lab",
+    "href": "index.html#beyond-the-lab",
+    "title": "Antoine Tourret",
+    "section": "Beyond the lab",
+    "text": "Beyond the lab\nI have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes — and capturing them at just the right moment before they vanish.\nFind my photos on Instagram: @antoine_cumulus.\nI also enjoy everything related to data visualization — building clear, elegant, and reproducible reports with Quarto.\nOne last thing: I own more than thirty ties and wear them pratically everyday (except when the weather is too hot)."
   },
   {
     "objectID": "posts/rshiny_app_zebrabox/index.html",
     "href": "posts/rshiny_app_zebrabox/index.html",
-    "title": "RShiny application for zebrabox data treatment",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
     "section": "",
     "text": "From raw data to interactive visualization."
   },
   {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#get-the-app",
-    "href": "posts/rshiny_app_zebrabox/index.html#get-the-app",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Get the app",
-    "text": "Get the app\nComing soon…"
+    "objectID": "posts/rshiny_app_zebrabox/index.html#introduction",
+    "href": "posts/rshiny_app_zebrabox/index.html#introduction",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
+    "section": "Introduction",
+    "text": "Introduction\nThe ZebraBox chamber is a complete system for high-throughput behavioral tests. Applications include pharmacology, toxicology, ecotoxicology, and behavioral genetics. The device holds 6-, 12-, 24-, 48- or 96-well plates and has a high-resolution camera which films in visible or infrared light. Tests run from minutes to days and each data point links to a fixed time window (integration period). Output files are .raw and .xls."
   },
   {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#load-or-create-a-plate-plan",
-    "href": "posts/rshiny_app_zebrabox/index.html#load-or-create-a-plate-plan",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Load or Create a Plate Plan",
-    "text": "Load or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is the required format? Download a 96-well sample plate plan."
+    "objectID": "posts/rshiny_app_zebrabox/index.html#why-zebrabox",
+    "href": "posts/rshiny_app_zebrabox/index.html#why-zebrabox",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
+    "section": "Why zebRabox?",
+    "text": "Why zebRabox?\nData in many files and formats leads to errors, duplicates, and manual fixes. zebRabox is an R package that wraps a Shiny application to centralize everything in one place. You get accurate, up-to-date, and auditable results without writing code. \n\nSimple : drag, drop, clean, merge, and analyze in a few clicks."
   },
   {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#load-raw-data",
-    "href": "posts/rshiny_app_zebrabox/index.html#load-raw-data",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Load Raw Data",
-    "text": "Load Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans."
+    "objectID": "posts/rshiny_app_zebrabox/index.html#how-to-use-zebrabox",
+    "href": "posts/rshiny_app_zebrabox/index.html#how-to-use-zebrabox",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
+    "section": "How to Use zebRabox?",
+    "text": "How to Use zebRabox?\n\nInstall the package\ninstall.packages(\"remotes\")\nremotes::install_github(\"Antoine-T17/zebRabox\", dependencies = TRUE, upgrade = \"never\")\n\n\nLaunch the app\nzebRabox::run_app()\n\n\nLoad or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is the required format? Download a 96-well sample plate plan.\n\n\nLoad Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans.\n\n\n\nChoose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide.\n\n\n\nChoose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
   },
   {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#choose-primary-mode",
-    "href": "posts/rshiny_app_zebrabox/index.html#choose-primary-mode",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Choose Primary Mode",
-    "text": "Choose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide."
+    "objectID": "posts/rshiny_app_zebrabox/index.html#processing-data",
+    "href": "posts/rshiny_app_zebrabox/index.html#processing-data",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
+    "section": "Processing Data",
+    "text": "Processing Data\n\nMatch Raw Data to Plate Plans\nConfirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan.\n\n\nAdditional Parameters\nBefore running full processing, upload your period transition file and removal specification file. Both must be .xlsx files with column names in the required format. What is the required format? Download a sample period transition file and a sample removal specification file.\n\n\nRun Full Processing\nAfter you start processing, follow each step in the Console Output. When it finishes, explore results in the Processed Data tab or download them for external analysis."
   },
   {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#choose-secondary-mode",
-    "href": "posts/rshiny_app_zebrabox/index.html#choose-secondary-mode",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Choose Secondary Mode",
-    "text": "Choose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
-    "href": "posts/rshiny_app_zebrabox/index.html#match-raw-data-to-plate-plans",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Match Raw Data to Plate Plans",
-    "text": "Match Raw Data to Plate Plans\nConfirm that each raw data file is correctly paired with its corresponding plate plan. Use the dropdown menu to select the appropriate plate plan."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
-    "href": "posts/rshiny_app_zebrabox/index.html#additional-parameters",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Additional Parameters",
-    "text": "Additional Parameters\nBefore running full processing, upload your period transition file and removal specification file. Both must be .xlsx files with column names in the required format. What is the required format? Download a sample period transition file and a sample removal specification file."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
-    "href": "posts/rshiny_app_zebrabox/index.html#run-full-processing",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Run Full Processing",
-    "text": "Run Full Processing\nAfter you start processing, follow each step in the Console Output. When it finishes, explore results in the Processed Data tab or download them for external analysis."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Boxplots",
-    "text": "Boxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest)."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#cumulative-boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Cumulative Boxplots",
-    "text": "Cumulative Boxplots\nView overall distributions independent of transition periods."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
-    "href": "posts/rshiny_app_zebrabox/index.html#delta-boxplots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Delta Boxplots",
-    "text": "Delta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli."
-  },
-  {
-    "objectID": "posts/rshiny_app_zebrabox/index.html#line-plots",
-    "href": "posts/rshiny_app_zebrabox/index.html#line-plots",
-    "title": "RShiny application for zebrabox data treatment",
-    "section": "Line Plots",
-    "text": "Line Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
+    "objectID": "posts/rshiny_app_zebrabox/index.html#visualize-data",
+    "href": "posts/rshiny_app_zebrabox/index.html#visualize-data",
+    "title": "zebRabox: an R package for ZebraBox data treatment",
+    "section": "Visualize Data",
+    "text": "Visualize Data\nChoose a plot type and generate the dataset. Check the Console Output to confirm the generation completed successfully. The Visualization tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.\nYou can configure and export figures with:\n\nTheme: light or dark\n\nZone selection: restrict to specific zones (if applicable)\n\nX-axis label order: define a custom order\n\nLabel color: set category/condition colors\n\nSave options: export each figure as PNG\n\n\nBoxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest).\n\n\nCumulative Boxplots\nView overall distributions independent of transition periods.\n\n\nDelta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli.\n\n\nLine Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
   }
 ]
