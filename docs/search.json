@@ -32,7 +32,7 @@
     "href": "private_backups/index.html#choose-primary-mode",
     "title": "RShiny application for zebrabox data treatment",
     "section": "Choose Primary Mode",
-    "text": "Choose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide."
+    "text": "Choose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nRefer to the guidelines provided by the supplier for details.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nRefer to the guidelines provided by the supplier for details."
   },
   {
     "objectID": "private_backups/index.html#choose-secondary-mode",
@@ -95,7 +95,7 @@
     "href": "portfolio.html",
     "title": "My portfolio",
     "section": "",
-    "text": "zebRabox: an R package for ZebraBox data treatment\n\n\n\nR\n\nRshiny\n\npackage\n\n\n\n\n\n\n\n\n\nMay 28, 2026\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "zebRabox: an R package for ZebraBox data treatment\n\n\n\nR\n\nRshiny\n\npackage\n\n\n\n\n\n\n\n\n\nMay 29, 2026\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "cv.html#contact-information",
@@ -200,7 +200,7 @@
     "href": "posts/rshiny_app_zebrabox/index.html#how-to-use-zebrabox",
     "title": "zebRabox: an R package for ZebraBox data treatment",
     "section": "How to Use zebRabox?",
-    "text": "How to Use zebRabox?\n\nInstall the package\ninstall.packages(\"remotes\")\nremotes::install_github(\"Antoine-T17/zebRabox\", dependencies = TRUE, upgrade = \"never\")\n\n\nLaunch the app\nzebRabox::run_app()\n\n\nLoad or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is the required format? Download a 96-well sample plate plan.\n\n\nLoad Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans.\n\n\n\nChoose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nSee details in the ZebraBox guide.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nSee details in the ZebraBox guide.\n\n\n\nChoose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
+    "text": "How to Use zebRabox?\n\nInstall the package\ninstall.packages(\"remotes\")\nremotes::install_github(\"Antoine-T17/zebRabox\", dependencies = TRUE, upgrade = \"never\")\n\n\nLaunch the app\nzebRabox::run_app()\n\n\nLoad or Create a Plate Plan\nZebraBox uses standard multi-well plates. Edge wells can show border effects. The app can generate a random plan. Download it as .xlsx or view it as a table and figure. If you already have a plan, load it and wait to see Upload complete to click on the button. Column names must follow the required format. What is the required format? Download a 96-well sample plate plan.\n\n\nLoad Raw Data\nRaw files must be in .xlsx. Convert your original .xls files before loading. When loading, wait to see Upload complete to click on the button.\n\nThe number of raw files must match your plate plans.\n\n\n\nChoose Primary Mode\n\nTracking mode\nFollows each subject’s path.\nYields distance moved, active time, and movement counts.\nRefer to the guidelines provided by the supplier for details.\nQuantization mode\nCounts pixel color changes.\nYields high, medium, or low activity levels.\nRefer to the guidelines provided by the supplier for details.\n\n\n\nChoose Secondary Mode\n\nLight/Dark (LDM)\nFor experiments with light shifts (0–100% or 100–0%).\nWorks even if no change occurred.\nVibration/Rest (VM)\nFor experiments with vibration frequencies (Hz)."
   },
   {
     "objectID": "posts/rshiny_app_zebrabox/index.html#processing-data",
