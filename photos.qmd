@@ -1,0 +1,44 @@
+---
+title: "Photos"
+page-layout: full
+title-block-banner: true
+lightbox: true
+---
+
+A few moments captured along the way. Click a photo to see it full size.
+
+::::{.photo-gallery}
+
+```{r}
+#| echo: false
+#| message: false
+#| results: asis
+
+img_dir <- "inputs/photos/main_page"
+captions_path <- file.path(img_dir, "captions.csv")
+
+img_files <- sort(list.files(img_dir, pattern = "(?i)\\.(jpe?g|png|webp)$"))
+
+captions <- if (file.exists(captions_path)) {
+  read.csv(captions_path, stringsAsFactors = FALSE, colClasses = "character")
+} else {
+  data.frame(file = character(), caption = character())
+}
+
+get_caption <- function(f) {
+  m <- captions$caption[captions$file == f]
+  if (length(m) == 0 || is.na(m[1]) || !nzchar(trimws(m[1]))) "" else trimws(m[1])
+}
+
+esc <- function(x) gsub('"', "&quot;", x, fixed = TRUE)
+
+for (f in img_files) {
+  cap <- esc(get_caption(f))
+  cat(sprintf(
+    ':::{.photo-item data-caption="%s"}\n![%s](%s){group="main-gallery" loading="lazy"}\n:::\n\n',
+    cap, cap, file.path(img_dir, f)
+  ))
+}
+```
+
+::::
