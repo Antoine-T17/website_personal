@@ -27,11 +27,9 @@ My research sits at the intersection of aquatic ecotoxicology and data science, 
 
 ## Research
 
-I am currently working on two projects:
+I am currently working on a project that aims to assess the ecotoxicity of model nanoplastics synthesised by the Institut des Sciences Analytiques et de Physico-Chimie pour l'Environnement et les Matériaux (IPREM, Pau). The project has two complementary components: on the one hand, the toxicity of pristine nanoplastics, and on the other, the toxicity of the same nanoplastics after several hours of photodegradation. Using identical samples allows a direct comparison between non-degraded and degraded nanoplastics. 
 
-**ANR AOP-NANOP** — This project aims to assess the ecotoxicity of model nanoplastics synthesised in the laboratory by the Institut des Sciences Analytiques et de Physico-Chimie pour l'Environnement et les Matériaux (IPREM) in Pau. The goal is to identify robust explanatory factors of nanoplastic toxicity on *Daphnia magna*.
-
-**Recycled urban furniture** — This second project evaluates the toxicity of recycled plastic urban furniture, again using the water flea as a sentinel organism.
+I am also working on another project that aims to evaluate the ecotoxicity of urban furniture made from recycled plastic. To do so, leaching experiments will be conducted, combined with chemical and ecotoxicological screening.
 
 ## Beyond the lab
 
