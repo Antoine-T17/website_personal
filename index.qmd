@@ -23,7 +23,7 @@ about:
 
 I am a PhD student at **Université Paris-Est Créteil**, within the **Laboratoire Eau Environnements et Systèmes Urbains (LEESU)**.
 
-My research sits at the intersection of aquatic ecotoxicology and data science, using *Daphnia magna* as a biological model.
+My research is focused on aquatic ecotoxicology, and I'm using *Daphnia magna* as a biological model.
 
 ## Research
 
@@ -33,10 +33,10 @@ I am also working on another project that aims to evaluate the ecotoxicity of ur
 
 ## Beyond the lab
 
-I have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes --- and capturing them at just the right moment before they vanish.
+I have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes, capturing them at just the right moment before they vanish.
 
 Find my photos on Instagram: [\@antoine_cumulus](https://www.instagram.com/antoine_cumulus/).
 
-I also enjoy everything related to **data visualization** --- building clear, elegant, and reproducible reports with [Quarto](https://quarto.org/).
+I also enjoy everything related to **data visualization**, building clear, elegant, and reproducible reports with [Quarto](https://quarto.org/).
 
 One last thing: I own more than thirty ties and wear them pratically everyday (except when the weather is too hot).
