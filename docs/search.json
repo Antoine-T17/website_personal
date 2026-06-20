@@ -98,6 +98,34 @@
     "text": "zebRabox: an R package for ZebraBox data treatment\n\n\n\nR\n\nRshiny\n\npackage\n\n\n\n\n\n\n\n\n\nMay 29, 2026\n\n\nAntoine Tourret\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Antoine Tourret",
+    "section": "",
+    "text": "I am a PhD student at Université Paris-Est Créteil, within the Laboratoire Eau Environnements et Systèmes Urbains (LEESU).\nMy research is focused on aquatic ecotoxicology, and I’m using Daphnia magna as a biological model."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Antoine Tourret",
+    "section": "Research",
+    "text": "Research\nI am currently working on a project that aims to assess the ecotoxicity of model nanoplastics synthesised by the Institut des Sciences Analytiques et de Physico-Chimie pour l’Environnement et les Matériaux (IPREM, Pau). The project has two complementary components: on the one hand, the toxicity of pristine nanoplastics, and on the other, the toxicity of the same nanoplastics after several hours of photodegradation. Using identical samples allows a direct comparison between non-degraded and degraded nanoplastics.\nI am also working on another project that aims to evaluate the ecotoxicity of urban furniture made from recycled plastic. To do so, leaching experiments will be conducted, combined with chemical and ecotoxicological screening."
+  },
+  {
+    "objectID": "index.html#beyond-the-lab",
+    "href": "index.html#beyond-the-lab",
+    "title": "Antoine Tourret",
+    "section": "Beyond the lab",
+    "text": "Beyond the lab\nI have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes, capturing them at just the right moment before they vanish.\nFind my photos on Instagram: @antoine_cumulus.\nI also enjoy everything related to data visualization, building clear, elegant, and reproducible reports with Quarto.\nOne last thing: I own more than thirty ties and wear them pratically everyday (except when the weather is too hot)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Antoine Tourret",
+    "section": "",
+    "text": "About this blog\n\n\n Back to top"
+  },
+  {
     "objectID": "cv.html#contact-information",
     "href": "cv.html#contact-information",
     "title": "Antoine Tourret - Curriculum Vitae",
@@ -147,32 +175,11 @@
     "text": "Skills and Interests\n\nScientific Skills: Sample preparation in synchronous fluorescence spectroscopy / LC-MS, training in HPLC-UV, mastery of monospecific algal cultures (Chlorella vulgaris, Microcystis aeruginosa, Chlamydomonas reinhardtii, Raphidocelis subcapitata) in axenic or non-axenic conditions and periphytic microbial cultures, development of Daphnia cultures (Daphnia magna), design of experimental setups for OECD acute toxicity tests or non-regulated chronic toxicity tests.\nIT Skills: RStudio, RShiny app, Quarto, Microsoft Office Suite (Excel, PowerPoint, Word).\nLanguages: French (native), English (C1).\nPersonal Interests: Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis (Xu Xin the GOAT), music (guitar, a bit of piano)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Antoine Tourret",
+    "objectID": "photos.html",
+    "href": "photos.html",
+    "title": "Photos",
     "section": "",
-    "text": "About this blog\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Antoine Tourret",
-    "section": "",
-    "text": "I am a PhD student at Université Paris-Est Créteil, within the Laboratoire Eau Environnements et Systèmes Urbains (LEESU).\nMy research is focused on aquatic ecotoxicology, and I’m using Daphnia magna as a biological model."
-  },
-  {
-    "objectID": "index.html#research",
-    "href": "index.html#research",
-    "title": "Antoine Tourret",
-    "section": "Research",
-    "text": "Research\nI am currently working on a project that aims to assess the ecotoxicity of model nanoplastics synthesised by the Institut des Sciences Analytiques et de Physico-Chimie pour l’Environnement et les Matériaux (IPREM, Pau). The project has two complementary components: on the one hand, the toxicity of pristine nanoplastics, and on the other, the toxicity of the same nanoplastics after several hours of photodegradation. Using identical samples allows a direct comparison between non-degraded and degraded nanoplastics.\nI am also working on another project that aims to evaluate the ecotoxicity of urban furniture made from recycled plastic. To do so, leaching experiments will be conducted, combined with chemical and ecotoxicological screening."
-  },
-  {
-    "objectID": "index.html#beyond-the-lab",
-    "href": "index.html#beyond-the-lab",
-    "title": "Antoine Tourret",
-    "section": "Beyond the lab",
-    "text": "Beyond the lab\nI have a passion for clouds. Identifying their forms, watching them evolve and transform within minutes, capturing them at just the right moment before they vanish.\nFind my photos on Instagram: @antoine_cumulus.\nI also enjoy everything related to data visualization, building clear, elegant, and reproducible reports with Quarto.\nOne last thing: I own more than thirty ties and wear them pratically everyday (except when the weather is too hot)."
+    "text": "A few moments captured along the way. Click a photo to see it full size.\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/rshiny_app_zebrabox/index.html",
@@ -215,12 +222,5 @@
     "title": "zebRabox: an R package for ZebraBox data treatment",
     "section": "Visualize Data",
     "text": "Visualize Data\nChoose a plot type and generate the dataset. Check the Console Output to confirm the generation completed successfully. The Visualization tab is designed for quick data exploration. For deeper customization, download the processed data or the generated plot datasets.\nYou can configure and export figures with:\n\nTheme: light or dark\n\nZone selection: restrict to specific zones (if applicable)\n\nX-axis label order: define a custom order\n\nLabel color: set category/condition colors\n\nSave options: export each figure as PNG\n\n\nBoxplots\nVisualize distributions across transition periods (e.g., Light/Dark or Vibration/Rest).\n\n\nCumulative Boxplots\nView overall distributions independent of transition periods.\n\n\nDelta Boxplots\nCompare values before, during, and after a selected transition period to pinpoint responses (e.g., escape/avoidance) to stimuli.\n\n\nLine Plots\nTrack activity or movement patterns over time to reveal trends and temporal dynamics."
-  },
-  {
-    "objectID": "photos.html",
-    "href": "photos.html",
-    "title": "Photos",
-    "section": "",
-    "text": "A few moments captured along the way. Click a photo to see it full size.\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]
