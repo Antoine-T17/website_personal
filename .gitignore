@@ -8,3 +8,13 @@ protect_map.csv
 .Renviron
 posts/rshiny_app_zebrabox/index.qmd
 protect_map_result.csv
+
+# Local notes and private files (never pushed)
+do_not_push.R
+project.txt
+prompt.txt
+private_backups/
+docs/private_backups/
+.claude/
+
+**/*.quarto_ipynb
