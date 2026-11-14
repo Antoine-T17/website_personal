@@ -57,7 +57,7 @@ PhD candidate in aquatic ecotoxicology at the Laboratoire Eau Environnement et S
 
 -   **PhD Thesis**\
     Laboratoire Eau Environnement et Systèmes Urbains – Université Paris-Est Créteil, Créteil, France\
-    Supervision: L. GARRIGUE-ANTAR and T. SRIKANTHASAMY\
+    Supervision: L. GARRIGUE-ANTAR\
     October 2024 – Present
     -   *Ecotoxicological effects of micro- and nanoplastics and their associated additives on* Daphnia magna.
     -   **AOP-NANOP project (ANR-22-CE04-0011)**: acute (OECD 202) and sub-acute (4-day) exposures of *D. magna* to fully characterised polystyrene nanoplastics synthesised by IPREM (Pau). Showed that the residual surfactant carried by the particles, rather than the particles themselves, drove acute toxicity and altered swimming behaviour (infrared video tracking).
@@ -131,8 +131,6 @@ About 125 hours taught at Université Paris-Est Créteil since 2024 (lectures, t
 | Metabolic regulation | Bachelor Year 3 | 4 h |
 | Omics in ecotoxicology | Master Year 2 | 3 h |
 
-**Planned for 2026 – 2027**: chemical risks (Bachelor Year 1, 6 h of lectures and 6 h of tutorials), aquatic ecotoxicology (3 h lecture and 2 h tutorial on dose–response curve modelling), and an ecotoxicology lecture for professional bachelor's students outside UPEC.
-
 ## Supervision & Mentoring
 
 -   **M2 intern** (January 2027 – July 2027, upcoming): ecotoxicological part of the URBIPLAST project (OECD 202 tests and transcriptomics on *Daphnia magna*).
@@ -153,6 +151,8 @@ Full supervision in each case: regular meetings, laboratory training and report 
 
 -   **Ecotoxicology**: *Daphnia magna* cultures, acute toxicity tests (OECD 202) and non-regulated sub-acute exposures, swimming behaviour by infrared video tracking, zebrafish (*Danio rerio*) larvae tests (OECD 236, ZebraBox), monospecific algal cultures (*Chlorella vulgaris*, *Microcystis aeruginosa*, *Chlamydomonas reinhardtii*, *Raphidocelis subcapitata*) in axenic or non-axenic conditions, growth inhibition tests (OECD 201), periphytic biofilm cultures in microcosms, PAM fluorometry, design of experimental setups.
 
+-   **Omics**: lipidomics (lipid extraction and data processing), transcriptomics.
+
 -   **Analytical chemistry**: leaching of plastic materials, filtration, solid-phase extraction (SPE), QuEChERS extraction, target analysis by LC-MS/MS, non-target screening by UPLC-IMS-QTOF, sample preparation in synchronous fluorescence spectroscopy, training in HPLC-UV.
 
 -   **Data & IT**: R / RStudio (biostatistics, dose–response modelling, data visualisation), RShiny, Quarto, Git / GitHub, QGIS, Microsoft Office Suite (Excel, PowerPoint, Word).
@@ -162,7 +162,6 @@ Full supervision in each case: regular meetings, laboratory training and report 
 -   **Languages**: French (native), English (C1).
 
 -   **Personal Interests**:
-    -   Cloud photography: identifying clouds and capturing them at the right moment ([\@antoine_cumulus](https://www.instagram.com/antoine_cumulus/)).
+    -   Cloud photography ([\@antoine_cumulus](https://www.instagram.com/antoine_cumulus/)).
     -   Data visualisation and reproducible reporting with Quarto.
-    -   Generative AI, used as a tool to support my work rather than replace it.
-    -   Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis (Xu Xin the GOAT), music (guitar, a bit of piano).
+    -   Running (half-marathon: 1:39:43), weight training (muscle strengthening and nutrition), table tennis, music (guitar, a bit of piano).
